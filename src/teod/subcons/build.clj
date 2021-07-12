@@ -6,6 +6,7 @@
 ;; Idea: hit a SINGLE use case in a good way first. That means finding
 ;; theory-meaning/index.edn, and transforming it to index.html.
 
+;; Could look for EDN files, but right now I just have one. Later, perhaps.
 (defn edn-paths []
   ["theory-meaning/index.edn"])
 
@@ -17,10 +18,6 @@
           (str "<!doctype html>"
                "\n"
                html))))
-
-(comment
-  (let [path "theory-meaning/index.edn"]
-    (string/replace path #".edn$" ".html")))
 
 (defn build-all [_opts]
   (doseq [path (edn-paths)]
