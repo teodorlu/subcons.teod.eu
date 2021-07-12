@@ -1,4 +1,0 @@
-{:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.10.3"}}
- :aliases
- {:run-m {:main-opts ["-m" "iterate.teo2"]}}}
