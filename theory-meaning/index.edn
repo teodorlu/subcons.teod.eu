@@ -11,7 +11,8 @@
   [:div {:style "height: 7em;"}]
   [:hr]
   [:h2 "Discussion"]
-  [:p "Comments are much welcome! Please use Twitter or Hypothesis."]
+  [:p "Comments are much welcome! Please use "
+   [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
   [:p "I actually mean A theory. It's not THE theory. We've constructed"
    " theories of meaning for as long as we've had culture. \"What am I?\""
    " I don't presume to solve that. So, why bother?"]
