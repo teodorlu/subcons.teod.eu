@@ -1,7 +1,14 @@
 [:html
  [:head
   [:meta {:charset "utf-8"}]
-  [:title "UNTITLED NOW"]]
+  [:title "A theory of meaning"]]
  [:body
-  [:p "A theory of meaning"]
-  [:p "this was the error ..."]]]
+  [:h1 "A theory of meaning"]
+  [:ol
+   [:li "Have a worthy persuit"]
+   [:li "Take care of your friends"]
+   [:li "Stay true to your principles"]]
+
+
+  ;; eeeh
+  ]]
