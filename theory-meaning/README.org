@@ -1,0 +1,3 @@
+#+TITLE: NOW
+
+Write EDN, not HTML.
