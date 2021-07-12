@@ -11,7 +11,7 @@
   [:div {:style "height: 7em;"}]
   [:hr]
   [:h2 "Discussion"]
-  [:p "I actually mean A theory. It's not THE theories. We've constructed"
+  [:p "I actually mean A theory. It's not THE theory. We've constructed"
    " theories of meaning for as long as we've had culture. \"What am I?\""
    " I don't presume to solve that. So, why bother?"
    ]
