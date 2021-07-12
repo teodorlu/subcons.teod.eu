@@ -2,4 +2,6 @@
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}
         hiccup/hiccup {:mvn/version "1.0.5"}}
  :aliases
- {:build {:main-opts ["-m" "teod.subcons.build"]}}}
+ {:build {:ns-default teod.subcons.build
+          :exec-fn build-all
+          :exec-args {}}}}
