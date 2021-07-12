@@ -24,8 +24,9 @@
 
 (defn build-all [_opts]
   (doseq [path (edn-paths)]
-    (println "building" path)
-    (build-edn path)))
+    (print "building" path "...")
+    (build-edn path)
+    (println " Done.")))
 
 
 (comment
