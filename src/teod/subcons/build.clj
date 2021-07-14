@@ -1,7 +1,8 @@
 (ns teod.subcons.build
   (:require [hiccup.core]
             [clojure.edn :as edn]
-            [clojure.string :as string]))
+            [clojure.string :as string]
+            [clojure.stacktrace]))
 
 (defn edn-paths []
   ["theory-meaning/index.edn"])
@@ -19,9 +20,14 @@
 (defn build-all [_opts]
   (doseq [edn-path (edn-paths)]
     (print "building" edn-path "...")
-    (let [edn (-> edn-path slurp edn/read-string)]
-      (hiccup-html edn edn-path))
-    (println " Done.")))
+    (try
+      (let [edn (-> edn-path slurp edn/read-string)]
+        (hiccup-html edn edn-path)
+        (println " done."))
+      (catch Throwable t
+        (println "Faied!")
+        (clojure.stacktrace/print-stack-trace t)))
+    (println "All done.")))
 
 (comment
   (build-all {})
