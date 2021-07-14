@@ -20,8 +20,8 @@
     [:li "Ask for help in the dedicated #help channel on the "
      [:a {:href "https://github.com/hlissner/doom-emacs#getting-help"}
       "Doom Emacs Discord"] " if you get stuck,"]
-    [:li "Read the guides on the " [:a {:href "Doom Emacs Discourse"}]
-     " to improve fluency with Magit, Dired, or learn to write your Doom package."]
+    [:li "Read the guides on the " [:a {:href "https://discourse.doomemacs.org/"} "Doom Emacs Discourse"]
+     " to improve fluency with Magit, Dired, or learn to write your Doom package"]
     ]
    [:span]]
   [:section {:id "discussion"}
