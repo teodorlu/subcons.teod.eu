@@ -20,9 +20,16 @@
     " theories of meaning for as long as we've had culture. \"What am I?\""
     " I don't presume to solve that. So, why bother?"]
    [:p "Because " [:em "the persuit"] " of a theory of meaning might be worthwhile."]
-   [:h3 "2021-07-12"]
-   [:p "About " [:em "Stay true to your principles"] ". Whose principles?"
-    " I like to talk about principles. But that's not really the point."
-    " The point is the \"stay true\" part. What does that mean? If you're"
-    " not staying true, then you'll feel bad. At least I would. And that's the point."]
-   [:p "But \"listen to your heart\" sounds too vague for my taste."]]]]
+   [:section
+    [:h3 "2021-07-12"]
+    [:p "About " [:em "Stay true to your principles"] ". Whose principles?"
+     " I like to talk about principles. But that's not really the point."
+     " The point is the \"stay true\" part. What does that mean? If you're"
+     " not staying true, then you'll feel bad. At least I would. And that's the point."]
+    [:p "-Teodor"]
+    [:p "But \"listen to your heart\" sounds too vague for my taste."]]
+   [:section
+    [:h3 "2021-07-14"]
+    [:p "I'm sceptical. This smells too orderly, too simple. Where's the outside influence? Where is the stuff"
+     " that's not known? Where are the new worthwhile persuits?"]
+    [:p "-Teodor"]]]]]
