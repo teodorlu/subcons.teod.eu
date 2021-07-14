@@ -4,7 +4,8 @@
             [teod.subcons.builder :as builder]))
 
 (defn edn-paths []
-  ["theory-meaning/index.edn"
+  ["index.edn"
+   "theory-meaning/index.edn"
    "doomemacs-journey/index.edn"
    "sp/index.edn"])
 
