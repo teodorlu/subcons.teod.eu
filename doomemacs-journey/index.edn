@@ -21,8 +21,7 @@
      [:a {:href "https://github.com/hlissner/doom-emacs#getting-help"}
       "Doom Emacs Discord"] " if you get stuck,"]
     [:li "Read the guides on the " [:a {:href "https://discourse.doomemacs.org/"} "Doom Emacs Discourse"]
-     " to improve fluency with Magit, Dired, or learn to write your Doom package"]
-    ]
+     " to improve fluency with Magit, Dired, or learn to write your Doom package"]]
    [:span]]
   [:section {:id "discussion"}
    [:div {:style "height: 7em;"}]
@@ -30,6 +29,3 @@
    [:h2 "Discussion"]
    [:p "Comments are much welcome! Please use "
     [:a {:href "https://twitter.com/TeodorHeggelund/status/1403645118893150209"} "Twitter"] " or Hypothesis."]]]]
-
-
-
