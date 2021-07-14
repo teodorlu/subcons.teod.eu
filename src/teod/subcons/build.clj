@@ -5,10 +5,12 @@
 
 (defn edn-paths []
   ["theory-meaning/index.edn"
-   "doomemacs-journey/index.edn"])
+   "doomemacs-journey/index.edn"
+   "sp/index.edn"])
 
-
-(defn build-all [_opts]
+(defn build-all
+  "One-off - build EDN files."
+  [_opts]
   (doseq [edn-path (edn-paths)]
     (println "building" edn-path "...")
     (try
@@ -20,6 +22,16 @@
         (println "Faied!")
         (clojure.stacktrace/print-stack-trace t)))
     (println "All done.")))
+
+;; TODO
+(defn watch-rebuild
+  "Look for changes to EDN files; then try to rebuild."
+  [_opts])
+
+;; TODO
+(defn watch-stop!
+  "Stop all watchers."
+  [])
 
 (comment
   (build-all {})
