@@ -4,4 +4,9 @@
   [:meta {:charset "utf-8"}]
   [:title "sp"]]
  [:body
-  "sp"]]
+  [:p "I need:"]
+  [:ul
+   [:li "a green"]
+   [:li "a yellow"]
+   [:li "and a blue"]]
+  [:p "What to do?"]]]
