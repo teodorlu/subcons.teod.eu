@@ -9,7 +9,8 @@
 (defmethod builder :eu.teod.subcons.builder/hiccup-html [edn]
   (let [edn-path (-> edn meta :eu.teod.subcons/source-path)
         html (hiccup.core/html edn)
-        html-path (string/replace edn-path #"\\.edn$" ".html")]
+        html-path (string/replace edn-path #"\.edn$" ".html")]
+    (assert (not= edn-path html-path) "Conflict: same input and output path.")
     (spit html-path
           (str "<!doctype html>"
                "\n"
@@ -22,5 +23,5 @@
   ;; multimethods can be a hassle in the REPL - just onload the whole ns.
   (remove-ns (-> *ns* str symbol))
 
-  (string/replace "index.edn" #"\\.edn$" ".html")
+  (string/replace "index.edn" #"\.edn$" ".html")
   )
