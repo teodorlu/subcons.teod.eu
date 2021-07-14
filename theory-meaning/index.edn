@@ -3,23 +3,25 @@
   [:meta {:charset "utf-8"}]
   [:title "A theory of meaning"]]
  [:body
-  [:h1 "A theory of meaning"]
-  [:ol
-   [:li "Have a worthy persuit"]
-   [:li "Take care of your friends"]
-   [:li "Stay true to your principles"]]
-  [:div {:style "height: 7em;"}]
-  [:hr]
-  [:h2 "Discussion"]
-  [:p "Comments are much welcome! Please use "
-   [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
-  [:p "I actually mean A theory. It's not THE theory. We've constructed"
-   " theories of meaning for as long as we've had culture. \"What am I?\""
-   " I don't presume to solve that. So, why bother?"]
-  [:p "Because " [:em "the persuit"] " of a theory of meaning might be worthwhile."]
-  [:h3 "2021-07-12"]
-  [:p "About " [:em "Stay true to your principles"] ". Whose principles?"
-   " I like to talk about principles. But that's not really the point."
-   " The point is the \"stay true\" part. What does that mean? If you're"
-   " not staying true, then you'll feel bad. At least I would. And that's the point."]
-  [:p "But \"listen to your heart\" sounds too vague for my taste."]]]
+  [:section {:id "main"}
+   [:h1 "A theory of meaning"]
+   [:ol
+    [:li "Have a worthy persuit"]
+    [:li "Take care of your friends"]
+    [:li "Stay true to your principles"]]]
+  [:section {:id "discussion"}
+   [:div {:style "height: 7em;"}]
+   [:hr]
+   [:h2 "Discussion"]
+   [:p "Comments are much welcome! Please use "
+    [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
+   [:p "I actually mean A theory. It's not THE theory. We've constructed"
+    " theories of meaning for as long as we've had culture. \"What am I?\""
+    " I don't presume to solve that. So, why bother?"]
+   [:p "Because " [:em "the persuit"] " of a theory of meaning might be worthwhile."]
+   [:h3 "2021-07-12"]
+   [:p "About " [:em "Stay true to your principles"] ". Whose principles?"
+    " I like to talk about principles. But that's not really the point."
+    " The point is the \"stay true\" part. What does that mean? If you're"
+    " not staying true, then you'll feel bad. At least I would. And that's the point."]
+   [:p "But \"listen to your heart\" sounds too vague for my taste."]]]]
