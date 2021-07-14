@@ -9,9 +9,11 @@
 
 (defn hiccup-html
   "Write HTML from EDN with Hiccup"
-  [edn edn-path]
-  (let [html (hiccup.core/html edn)
+  [edn]
+  (let [edn-path (-> edn meta :eu.teod.subcons/source-path)
+        html (hiccup.core/html edn)
         html-path (string/replace edn-path #".edn$" ".html")]
+    (prn "got meta" (meta edn))
     (spit html-path
           (str "<!doctype html>"
                "\n"
@@ -21,8 +23,9 @@
   (doseq [edn-path (edn-paths)]
     (print "building" edn-path "...")
     (try
-      (let [edn (-> edn-path slurp edn/read-string)]
-        (hiccup-html edn edn-path)
+      (let [edn (-> edn-path slurp edn/read-string
+                    (vary-meta assoc :eu.teod.subcons/source-path edn-path))]
+        (hiccup-html edn)
         (println " done."))
       (catch Throwable t
         (println "Faied!")
@@ -35,5 +38,10 @@
   (meta
    (-> (edn-paths)
        first slurp edn/read-string))
+
+  (-> ["teodor"]
+      (with-meta  {:teod/id "teod"})
+      (vary-meta assoc :teod/count 99)
+      meta)
 
   )
