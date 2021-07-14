@@ -1,0 +1,7 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "sp"]]
+ [:body
+  "sp"]]
