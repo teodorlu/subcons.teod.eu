@@ -9,11 +9,11 @@ section#introduction {
     background-color: green;
 }
 
-section#colors > * {
-    padding: 2em;
-}
-
 section#colors {
     background-color: yellowgreen;
     flex: 1;
+}
+
+section#colors > * {
+    padding: 2em;
 }
