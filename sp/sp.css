@@ -1,7 +1,12 @@
 body {
+    min-height: 100%;
     margin: 0;
+}
+
+#container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 section#introduction {
@@ -16,4 +21,30 @@ section#colors {
 
 section#colors > * {
     padding: 2em;
+}
+
+/* Some possible greens. */
+
+.green1 {
+    background-color: #43a047;
+}
+
+.green2 {
+    background-color: #288a2b;
+}
+
+.green3 {
+    background-color: #3fa142;
+}
+
+.green4 {
+    background-color: #77f87a;
+}
+
+.green5 {
+    background-color: #69da6b;
+}
+
+.green6 {
+    background-color: #4cc24f;
 }
