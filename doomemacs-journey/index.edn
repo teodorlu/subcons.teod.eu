@@ -1,0 +1,22 @@
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "A Doom Emacs journey"]]
+ [:body
+  [:section {:id "main"}
+   [:h1 "A Doom Emacs journey"]
+   [:p "I enjoy the times when I can work in Doom Emacs. I'd like to share that."
+    " I "
+    [:a {:href "https://twitter.com/TeodorHeggelund/status/1403645361630199821"}
+     "tweeted"]
+    " about Emacs, and Doom specifically a while back. Here's the follow-up."]
+   [:span]]
+  [:section {:id "discussion"}
+   [:div {:style "height: 7em;"}]
+   [:hr]
+   [:h2 "Discussion"]
+   [:p "Comments are much welcome! Please use "
+    [:a {:href "https://twitter.com/TeodorHeggelund/status/1403645118893150209"} "Twitter"] " or Hypothesis."]]]]
+
+
+
