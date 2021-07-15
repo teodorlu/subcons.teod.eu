@@ -14,8 +14,8 @@
      [:p "I want to show the header with a spectrum of colors I've chosen."
       " Then ... yeah, then what?"]
      [:p "I'd like to lead with a full page -- with a background like this. Then,"
-      " after that, I'd like to be able to scroll smoothly. Just put stuff on the screen, you know."]]
-    ]]
+      " after that, I'd like to be able to scroll smoothly. Just put stuff on the screen, you know."]
+     [:p {:style "color: yellow"} "What if plain yellow instead?"]]]]
   [:section {:class "yellow"} #_"lighter green"]
   [:section {:class "blue"} #_"blue"]
   ]]
