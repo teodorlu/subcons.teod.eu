@@ -4,6 +4,7 @@
   [:meta {:charset "utf-8"}]
   [:title "·"]
   [:link {:rel "stylesheet" :href "portable-articles.css"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
  [:body
   [:section {:class "main-flow"
