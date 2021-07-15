@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > section {
+    flex-grow: 1;
+}
+
+.anchor {
+    position: relative;
+}
+
+.textbox {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    font-size: 20px;
+}
+
+
+/* ------------------------------------------------------
+                    Some possible greens
+   ------------------------------------------------------ */
+
+.green1, .green {
+    background-color: #43a047;
+}
+
+.green2 {
+    background-color: #288a2b;
+}
+
+.green3 {
+    background-color: #3fa142;
+}
+
+.green4, .yellow {
+    background-color: #77f87a;
+}
+
+.green5 {
+    background-color: #69da6b;
+}
+
+.green6 {
+    background-color: #4cc24f;
+}
+
+.teal1, .blue {
+    background-color: #1f5768;
+}
