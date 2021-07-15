@@ -15,6 +15,9 @@
      [:li "Take care of your friends"]
      [:li "Stay true to your principles"]]]]
   [:section {:id "discussion"}
+   [:section {:style "margin-top: 2em; margin-bottom: 2em"}
+    [:p {:style "color: white; text-align: center"}
+     "Now what?"]]
    [:section
     [:h2 "Discussion"]
     [:p "Comments are much welcome! Please use "

@@ -19,13 +19,12 @@
   [:section {:style "background-color: #77f87a"}
    [:div {:class "anchor"}
     [:div {:class "textbox"}
-     [:p {:style "color: yellow"} "Yellow text here?"]
-     [:p {:style "color: #1f5768"} "Teal?"
-      " I might do more of that."]]]]
+     [:p {:style "color: yellow"} "Insight."]
+     [:p {:style "color: #1f5768"} "Reason."]]]]
   [:section {:style "background-color: #1f5768"}
    #_"blue"
    [:div {:class "anchor"}
     [:div {:class "textbox"}
-     [:p {:style "color: yellow"} "Yellow text?"]
-     [:p {:style "color: #ffb703"} "Yellowish text?"]
-     [:p {:style "color: #77f87a"} "GROW"]]]]]]
+     [:p {:style "color: yellow"} "Attention."]
+     [:p {:style "color: #ffb703"} "Details."]
+     [:p {:style "color: #77f87a"} "Growth."]]]]]]
