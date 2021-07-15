@@ -3,7 +3,8 @@
  [:head
   [:meta {:charset "utf-8"}]
   [:title "A theory of meaning"]
-  [:link {:rel "stylesheet" :href "theory-meaning.css"}]]
+  [:link {:rel "stylesheet" :href "theory-meaning.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
  [:body
   [:section {:id "main"}
    [:section
@@ -11,8 +12,7 @@
     [:ol
      [:li "Have a worthy persuit"]
      [:li "Take care of your friends"]
-     [:li "Stay true to your principles"]]
-    [:p "Is that enough?"]]]
+     [:li "Stay true to your principles"]]]]
   [:section {:id "discussion"}
    [:section
     [:h2 "Discussion"]
