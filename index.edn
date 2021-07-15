@@ -4,11 +4,13 @@
   [:meta {:charset "utf-8"}]
   [:meta {:http-equiv "x-ua-compatible" :content "ie=edge"}]
   [:title "·"]
-  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "stylesheet" :href "root.css"}]]
  [:body
-  [:p "Places not of reason include:"]
-  [:ul
-   [:li [:a {:href "./theory-meaning/"} "A theory of meaning"]]
-   [:li [:a {:href "./doomemacs-journey/"} "./doomemacs-journey/"]]
-   [:li [:a {:href "./sp3/"} "./sp3/"]]
-   [:li [:a {:href "./sp4/"} "./sp4/"]]]]]
+  [:section
+   [:p "Places not of reason include:"]
+   [:ul
+    [:li [:a {:href "./theory-meaning/"} "A theory of meaning"]]
+    [:li [:a {:href "./doomemacs-journey/"} "./doomemacs-journey/"]]
+    [:li [:a {:href "./sp3/"} "./sp3/"]]
+    [:li [:a {:href "./sp4/"} "./sp4/"]]]]]]

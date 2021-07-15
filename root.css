@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: #1f5768;
+    color: yellow;
+}
+
+body > section {
+    margin: 2em;
+}
+
+
+body {
+    font-size: 20px;
+}
