@@ -11,16 +11,14 @@
    [:div {:class "anchor"}
     [:div {:class "textbox"
            :style "color: #ffb703; max-width: 40em;"}
-     [:p "I want to show the header with a spectrum of colors I've chosen."
-      " Then ... yeah, then what?"]
-     [:p {:style "color: yellow"} "What if plain yellow instead?"]
-     [:p "I'd like to lead with a full page -- with a background like this. Then,"
-      " after that, I'd like to be able to scroll smoothly. Just put stuff on the screen, you know."]]]]
+     [:p "Dirt, sand. Stained glass."]
+     [:p {:style "color: yellow"} "Clarity."]
+     [:p "A bright future?"]]]]
   [:section {:class "yellow"} #_"lighter green"
    [:div {:class "anchor"}
     [:div {:class "textbox"}
      [:p {:style "color: yellow"} "Yellow text here?"]
-     [:p {:style "color: #ffb703"} "Yellowish text here?"]
+     [:p {:style "color: #ffb703"} "Yellowish text here? No."]
      [:p {:style "color: #1f5768"} "Teal?"]
      [:p {:style "color: #1f5768"} "I might do more of that."]]]]
   [:section {:style "background-color: #1f5768"}
