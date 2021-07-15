@@ -8,7 +8,8 @@
  [:body
   [:section {:id "main"}
    [:section
-    [:h1 "A theory of meaning"]
+    [:h1 {:style "color: brown"}
+     "A theory of meaning"]
     [:ol
      [:li "Have a worthy persuit"]
      [:li "Take care of your friends"]
@@ -34,4 +35,7 @@
     [:h3 "2021-07-14"]
     [:p "I'm sceptical. This smells too orderly, too simple. Where's the outside influence? Where is the stuff"
      " that's not known? Where are the new worthwhile persuits?"]
-    [:p.sig "-Teodor"]]]]]
+    [:p.sig "-Teodor"]]
+   [:section
+    [:p {:style "color: white; margin-left: auto; margin-right: auto; margin-top: 4rem; text-align: center"}
+     "What now?"]]]]]

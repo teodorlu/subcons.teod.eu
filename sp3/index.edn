@@ -12,13 +12,15 @@
     [:div {:class "textbox"
            :style "color: #ffb703"}
      [:p "Look at " [:a {:href "https://sr.ht/"} "sr.ht"] ]
-     [:p "Look at " [:a {:href "https://swaywm.org/"} "swaywm.org"]]]
+     [:p "Look at " [:a {:href "https://swaywm.org/"} "swaywm.org"]]
+     ]
     ]]
   [:section {:class "yellow"} #_"lighter green"
    [:div {:class "anchor"}
     [:div {:class "textbox"
            :style "color: brown;"}
-     [:p "Look"]]]]
+     [:p "Look at " [:a {:href "https://drewdevault.com/2021/07/04/Is-GitHub-a-derivative-work.html"}
+                     "Drew DeVault's blog"]]]]]
   [:section {:class "blue"} #_"blue"
    [:div {:class "anchor"}
     [:div {:class "textbox"
