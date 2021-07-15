@@ -2,7 +2,8 @@
 [:html
  [:head
   [:meta {:charset "utf-8"}]
-  [:title "A theory of meaning"]]
+  [:title "A theory of meaning"]
+  [:link {:rel "stylesheet" :href "theory-meaning.css"}]]
  [:body
   [:section {:id "main"}
    [:h1 "A theory of meaning"]
@@ -11,8 +12,6 @@
     [:li "Take care of your friends"]
     [:li "Stay true to your principles"]]]
   [:section {:id "discussion"}
-   [:div {:style "height: 7em;"}]
-   [:hr]
    [:h2 "Discussion"]
    [:p "Comments are much welcome! Please use "
     [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
