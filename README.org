@@ -14,6 +14,21 @@ bin/watch
 
 . That should start a web browser for you.
 
+You can view the live server directly on a mobile device, just find the local
+network IP of the computer you're using.
+
+#+begin_src
+$ ifconfig -a | grep wlp0s20f3 -A 5
+wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.160  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::6311:d04f:5525:23cb  prefixlen 64  scopeid 0x20<link>
+        ether 50:eb:71:43:0d:c8  txqueuelen 1000  (Ethernet)
+        RX packets 929092  bytes 1253081171 (1.2 GB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+#+end_src
+
+Right now, I'm 192.168.1.160. That means I can view http://192.168.1.160:8080 on
+my phone.
 * wats 2021-07-15
 1. I want to be able to hit the buttons from the index page
 2. I want prettier documents
