@@ -2,7 +2,7 @@
 [:html
  [:head
   [:meta {:charset "utf-8"}]
-  [:title "A theory of meaning"]
+  [:title "·"]
   [:link {:rel "stylesheet" :href "portable-articles.css"}]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
  [:body
@@ -29,7 +29,11 @@
       [:div {:style "position: absolute; left: -72vw; width: 68vw"}
        [:p "Let's continue writing here! There are no limits!"
         " Absolutely no limits! Why even bother with normal document flow!"
-        " Absolute relative/absolute abuse!"]]]]]
+        " Absolute relative/absolute abuse!"]
+       [:p "Can we do this in flexbox without terrible nesting, perhaps?"]
+       [:p "I'm curious."]]]]]
+   ;; Return to the main flow
    [:p "We've put layers and layers of stuff on top of HTML. Do we need all that stuff?"
     " Really? I'm not convinced. Being able to edit the HTML directly can let us to cool stuff."
-    " Let's create an annotation row. We need to make space for it first."]]]]
+    " Let's create an annotation row. We need to make space for it first."]
+   ]]]
