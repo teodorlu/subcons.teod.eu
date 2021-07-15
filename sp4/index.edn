@@ -14,7 +14,7 @@
      [:p "Dirt, sand. Stained glass."]
      [:p {:style "color: yellow"} "Clarity."]
      [:p "A bright future?"]]]]
-  [:section {:class "yellow"} #_"lighter green"
+  [:section {:style "background-color: #77f87a"}
    [:div {:class "anchor"}
     [:div {:class "textbox"}
      [:p {:style "color: yellow"} "Yellow text here?"]
@@ -26,4 +26,5 @@
    [:div {:class "anchor"}
     [:div {:class "textbox"}
      [:p {:style "color: yellow"} "Yellow text?"]
-     [:p {:style "color: #ffb703"} "Yellowish text?"]]]]]]
+     [:p {:style "color: #ffb703"} "Yellowish text?"]
+     [:p {:style "color: #77f87a"} "GROW"]]]]]]
