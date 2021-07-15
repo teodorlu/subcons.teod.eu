@@ -19,8 +19,8 @@
     [:div {:class "textbox"}
      [:p {:style "color: yellow"} "Yellow text here?"]
      [:p {:style "color: #ffb703"} "Yellowish text here? No."]
-     [:p {:style "color: #1f5768"} "Teal?"]
-     [:p {:style "color: #1f5768"} "I might do more of that."]]]]
+     [:p {:style "color: #1f5768"} "Teal?"
+      " I might do more of that."]]]]
   [:section {:style "background-color: #1f5768"}
    #_"blue"
    [:div {:class "anchor"}
