@@ -5,7 +5,11 @@
   [:title "sp"]
   [:link {:rel "stylesheet" :href "sp.css"}]]
  [:body
+  [:section {:class "green"} #_"green"]
+  [:section {:class "yellow"} #_"yellow"]
+  [:section {:class "blue"} #_"blue"]
   #_ "I'd like this to show up top, as much space as it needs."
+  #_
   [:div {:id "container"}
    [:section {:id "introduction"}
     [:p "I need:"]
@@ -16,7 +20,4 @@
     [:p "What to do?"]
     [:p "I started programming - I don't really want to program, I want to view colors. So let's compile once, then get this working."]]
    #_ "And this to take up the remaining space, dividing equally between the colors."
-   [:section {:id "colors"}
-    [:div {:class "green"} "green"]
-    [:div {:class "yellow"} "yellow"]
-    [:div {:class "blue"} "blue"]]]]]
+   ]]]

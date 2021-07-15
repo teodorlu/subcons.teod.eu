@@ -1,31 +1,24 @@
-body {
-    min-height: 100%;
-    margin: 0;
+html {
+    height: 100vh;
 }
 
-#container {
+body {
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
-section#introduction {
-    padding: 2em;
-    background-color: green;
+body > section {
+    flex-grow: 1;
 }
 
-section#colors {
-    background-color: yellowgreen;
-    flex: 1;
-}
 
-section#colors > * {
-    padding: 2em;
-}
+/* ------------------------------------------------------
+                    Some possible greens
+   ------------------------------------------------------ */
 
-/* Some possible greens. */
-
-.green1 {
+.green1, .green {
     background-color: #43a047;
 }
 
@@ -37,7 +30,7 @@ section#colors > * {
     background-color: #3fa142;
 }
 
-.green4 {
+.green4, .yellow {
     background-color: #77f87a;
 }
 
@@ -47,4 +40,8 @@ section#colors > * {
 
 .green6 {
     background-color: #4cc24f;
+}
+
+.teal1, .blue {
+    background-color: #1f5768;
 }
