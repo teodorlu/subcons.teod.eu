@@ -20,8 +20,5 @@
   [:section {:class "blue"} #_"blue"
    [:div {:class "anchor"}
     [:div {:class "textbox"}
-     [:p ]
-     ]]
-
-   ]
-  ]]
+     [:p {:style "color: yellow"} "Yellow text?"]
+     [:p {:style "color: #ffb703"} "Yellowish text?"]]]]]]
