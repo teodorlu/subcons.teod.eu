@@ -38,18 +38,3 @@ NOW: can an EDN file have metadata? That would be nice.
 {:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
 #+end_src
 
-* Old wats
-*wat*
-
-ideas Out NOW
-
-*wat*
-
-I'd like a server for this. Is it enough to look for EDN files, and show each?
-But ... there needs to be URLs. And these URLs need to be shown.
-
-So ... given an URL, please let me subscribe to changes to it, then transform
-the EDN, and keep a browser updated? And ... I don't need Clojurescript, I could
-just have a piece of javascript on a websocket.
-
-hmmmm
