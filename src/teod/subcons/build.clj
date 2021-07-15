@@ -7,7 +7,8 @@
   ["index.edn"
    "theory-meaning/index.edn"
    "doomemacs-journey/index.edn"
-   "sp/index.edn"])
+   "sp/index.edn"
+   "ast/index.edn"])
 
 (defn build-all
   "One-off - build EDN files."
