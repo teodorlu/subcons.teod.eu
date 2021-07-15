@@ -1,3 +1,7 @@
+/* ---------------------------------------------------------------------------
+                             TYPOGRAPHY AND SIZING
+ */
+
 a {
     color: inherit;
 }
@@ -22,6 +26,10 @@ body h3 {
 body > section {
     padding: 2em;
 }
+
+/* ---------------------------------------------------------------------------
+                                 GRAPHIC STYLE
+ */
 
 body > section:nth-child(1) {
     background-color: #77f87a;
