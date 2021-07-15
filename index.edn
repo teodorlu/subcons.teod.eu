@@ -3,7 +3,8 @@
  [:head
   [:meta {:charset "utf-8"}]
   [:meta {:http-equiv "x-ua-compatible" :content "ie=edge"}]
-  [:title "untitle"]]
+  [:title "untitle"]
+  [:meta {:name "viewpoert" :content "width=device-width, initial-scale=1"}]]
  [:body
   [:p "Places not of reason include:"]
   [:ul
