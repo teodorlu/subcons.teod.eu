@@ -4,7 +4,13 @@
   [:meta {:charset "utf-8"}]
   [:meta {:http-equiv "x-ua-compatible" :content "ie=edge"}]
   [:title "·"]
-  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "stylesheet" :href "ast.css"}]]
  [:body
-  [:p "Look?"]
-  ]]
+  [:section {:class "green"} #_"green"]
+  [:section {:class "yellow"} #_"yellow"]
+  [:section {:class "blue"} #_"blue"]
+  [:div {:id "textbox"}
+   [:p "Look?"]
+   [:p "look."]
+   [:p "INTO"]]]]

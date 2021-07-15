@@ -13,6 +13,12 @@ body > section {
     flex-grow: 1;
 }
 
+#textbox {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
 
 /* ------------------------------------------------------
                     Some possible greens
