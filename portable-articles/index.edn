@@ -1,0 +1,35 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "A theory of meaning"]
+  [:link {:rel "stylesheet" :href "portable-articles.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
+ [:body
+  [:section {:class "main-flow"
+             :style "width: 68%"}
+   [:p "Structure is primary."]
+   [:p "I'd like to take articles with me. But I don't really care about"
+    " having " [:em "one"] " style for everywhere. The \"one folder one article\" ethos"
+    " is working out well, at least for now. I actually find that I enjoy eding this just"
+    " as much as typing things out in a plaintext format."]
+   [:p "Now it doesn't work any more, I've commented out attachment to the builder."
+    " That means no more live reload until i plug it back in."]
+   [:p "Let's do it."]
+   [:hr]
+   [:div {:class "anchor" :style "position: relative"}
+    [:div {:style "position: absolute; left: 72vw; width: 20vw;"}
+     [:p
+      "What does this look like? This element is outside the normal flow."
+      " But it's still positioned next to the other stuff."]
+     [:p "Just remember to create an anchor."]
+     [:p "Note that this quickly breaks down if there's too many annotations."]
+     [:p "Or does it?"]
+     [:div {:style "position: relative"}
+      [:div {:style "position: absolute; left: -72vw; width: 68vw"}
+       [:p "Let's continue writing here! There are no limits!"
+        " Absolutely no limits! Why even bother with normal document flow!"
+        " Absolute relative/absolute abuse!"]]]]]
+   [:p "We've put layers and layers of stuff on top of HTML. Do we need all that stuff?"
+    " Really? I'm not convinced. Being able to edit the HTML directly can let us to cool stuff."
+    " Let's create an annotation row. We need to make space for it first."]]]]
