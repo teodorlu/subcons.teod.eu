@@ -12,7 +12,7 @@
     [:h1 {:style "color: brown"}
      "A theory of meaning"]
     [:p {:style "position: absolute; left: 30em; color: #3B463E"}
-     "I don't heading like the color."]
+     "I don't like the heading color."]
     [:ol
      [:li "Have a worthy pursuit"]
      [:li "Take care of your friends"]
