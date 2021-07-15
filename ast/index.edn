@@ -11,6 +11,6 @@
   [:section {:class "yellow"} #_"yellow"]
   [:section {:class "blue"} #_"blue"]
   [:div {:id "textbox"}
-   [:p "Look?"]
-   [:p "look."]
+   [:p "Look?"
+     " look."]
    [:p "INTO"]]]]
