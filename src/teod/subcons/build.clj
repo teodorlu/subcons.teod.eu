@@ -44,13 +44,23 @@
        (= "index.edn"
           (.getName file))))
 
-(defn watch-rebuild-edn-handler [ctx e]
-  (let [{:keys [kind file]} e]
-    (println kind file)))
+(defn watch-rebuild-edn-handler [_ctx e]
+  (let [{:keys [_kind file]} e]
+    (try
+      (let [edn-path (.getPath file)
+            _ (println "building" edn-path "...")
+            edn (-> edn-path slurp edn/read-string
+                    (vary-meta assoc :eu.teod.subcons/source-path edn-path))]
+        (builder/builder edn)
+        (println "Done."))
+      (catch Throwable t
+        (println "Faied!")
+        (clojure.stacktrace/print-stack-trace t)))))
 
 (defn watch-rebuild-edn!
   "Look for changes to EDN files; then try to rebuild."
   [_opts]
+  (println "Watching and rebuilding index.edn files")
   (watch-rebuild-edn-stop!)
   (hawk/watch! [{:paths ["."]
                  :filter #'index-edn?

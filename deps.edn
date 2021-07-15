@@ -5,4 +5,7 @@
  :aliases
  {:build {:ns-default teod.subcons.build
           :exec-fn build-all
+          :exec-args {}}
+  :watch {:ns-default teod.subcons.build
+          :exec-fn watch-rebuild-edn!
           :exec-args {}}}}
