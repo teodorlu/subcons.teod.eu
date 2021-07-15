@@ -1,6 +1,7 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}
-        hiccup/hiccup {:mvn/version "1.0.5"}}
+        hiccup/hiccup {:mvn/version "1.0.5"}
+        hawk/hawk {:mvn/version "0.2.11"}}
  :aliases
  {:build {:ns-default teod.subcons.build
           :exec-fn build-all

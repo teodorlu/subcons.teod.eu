@@ -1,7 +1,8 @@
 (ns teod.subcons.build
   (:require [clojure.edn :as edn]
             [clojure.stacktrace]
-            [teod.subcons.builder :as builder]))
+            [teod.subcons.builder :as builder]
+            [hawk.core :as hawk]))
 
 (defn edn-paths []
   ["index.edn"
@@ -25,17 +26,39 @@
         (clojure.stacktrace/print-stack-trace t)))
     (println "All done.")))
 
-;; TODO
-(defn watch-rebuild
-  "Look for changes to EDN files; then try to rebuild."
-  [_opts])
 
-;; TODO
-(defn watch-stop!
+
+(defonce watcher (atom nil))
+
+(defn watch-rebuild-edn-stop!
   "Stop all watchers."
-  [])
+  []
+  (swap! watcher
+         (fn [w]
+           (when w
+             (hawk/stop! w))
+           nil)))
+
+(defn index-edn? [ctx {:keys [file] :as e}]
+  (and (hawk/file? ctx e)
+       (= "index.edn"
+          (.getName file))))
+
+(defn watch-rebuild-edn-handler [ctx e]
+  (let [{:keys [kind file]} e]
+    (println kind file)))
+
+(defn watch-rebuild-edn!
+  "Look for changes to EDN files; then try to rebuild."
+  [_opts]
+  (watch-rebuild-edn-stop!)
+  (hawk/watch! [{:paths ["."]
+                 :filter #'index-edn?
+                 :handler #'watch-rebuild-edn-handler}]))
 
 (comment
+  (watch-rebuild-edn! {})
+
   (build-all {})
 
   (meta
@@ -46,5 +69,4 @@
       (with-meta  {:teod/id "teod"})
       (vary-meta assoc :teod/count 99)
       meta)
-
   )
