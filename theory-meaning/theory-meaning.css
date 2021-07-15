@@ -34,3 +34,7 @@ body > section:nth-child(2) {
     color: #77f87a;
     min-height: 68vh;
 }
+
+body > section:nth-child(2) h2,h3 {
+    color: yellow;
+}
