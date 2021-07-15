@@ -10,4 +10,5 @@
   [:ul
    [:li [:a {:href "./theory-meaning/"} "A theory of meaning"]]
    [:li [:a {:href "./doomemacs-journey/"} "./doomemacs-journey/"]]
-   [:li [:a {:href "./sp3/"} "./sp3/"]]]]]
+   [:li [:a {:href "./sp3/"} "./sp3/"]]
+   [:li [:a {:href "./sp4/"} "./sp4/"]]]]]
