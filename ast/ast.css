@@ -13,10 +13,15 @@ body > section {
     flex-grow: 1;
 }
 
-#textbox {
+.anchor {
+    position: relative;
+}
+
+.textbox {
     position: absolute;
     top: 2em;
     right: 2em;
+    font-size: 20px;
 }
 
 

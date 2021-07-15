@@ -7,10 +7,21 @@
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
   [:link {:rel "stylesheet" :href "ast.css"}]]
  [:body
-  [:section {:class "green"} #_"green"]
-  [:section {:class "yellow"} #_"yellow"]
-  [:section {:class "blue"} #_"blue"]
-  [:div {:id "textbox"}
-   [:p "Look?"
-     " look."]
-   [:p "INTO"]]]]
+  [:section {:class "green"} #_"green"
+   [:div {:class "anchor"}
+    [:div {:class "textbox"
+           :style "color: #ffb703"}
+     [:p "Look?"
+      " look."]
+     [:p "INTO"]]]]
+  [:section {:class "yellow"} #_"lighter green"
+   [:div {:class "anchor"}
+    [:div {:class "textbox"
+           :style "color: brown;"}
+     [:p "looook"]]]]
+  [:section {:class "blue"} #_"blue"
+   [:div {:class "anchor"}
+    [:div {:class "textbox"
+           :style "color: yellow;"}
+     [:p "jk"]]]]
+  ]]
