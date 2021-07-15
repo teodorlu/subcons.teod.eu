@@ -14,6 +14,8 @@
      [:p "Dirt, sand. Stained glass."]
      [:p {:style "color: yellow"} "Clarity."]
      [:p "A bright future?"]]]]
+  ;; do want: :style {:background-color "#77f87a"}
+  ;; could solve with a walk. I also kinda want to call sci functions in here
   [:section {:style "background-color: #77f87a"}
    [:div {:class "anchor"}
     [:div {:class "textbox"}
