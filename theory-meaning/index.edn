@@ -6,20 +6,22 @@
   [:link {:rel "stylesheet" :href "theory-meaning.css"}]]
  [:body
   [:section {:id "main"}
-   [:h1 "A theory of meaning"]
-   [:ol
-    [:li "Have a worthy persuit"]
-    [:li "Take care of your friends"]
-    [:li "Stay true to your principles"]]
-   [:p "Is that enough?"]]
+   [:section
+    [:h1 "A theory of meaning"]
+    [:ol
+     [:li "Have a worthy persuit"]
+     [:li "Take care of your friends"]
+     [:li "Stay true to your principles"]]
+    [:p "Is that enough?"]]]
   [:section {:id "discussion"}
-   [:h2 "Discussion"]
-   [:p "Comments are much welcome! Please use "
-    [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
-   [:p "I actually mean A theory. It's not THE theory. We've constructed"
-    " theories of meaning for as long as we've had culture. \"What am I?\""
-    " I don't presume to solve that. So, why bother?"]
-   [:p "Because " [:em "the persuit"] " of a theory of meaning might be worthwhile."]
+   [:section
+    [:h2 "Discussion"]
+    [:p "Comments are much welcome! Please use "
+     [:a {:href "https://twitter.com/TeodorHeggelund/status/1414673600817336322"} "Twitter"] " or Hypothesis."]
+    [:p "I actually mean A theory. It's not THE theory. We've constructed"
+     " theories of meaning for as long as we've had culture. \"What am I?\""
+     " I don't presume to solve that. So, why bother?"]
+    [:p "Because " [:em "the persuit"] " of a theory of meaning might be worthwhile."]]
    [:section
     [:h3 "2021-07-12"]
     [:p "About " [:em "Stay true to your principles"] ". Whose principles?"
