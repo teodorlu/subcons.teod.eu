@@ -13,9 +13,15 @@
            :style "color: #ffb703; max-width: 40em;"}
      [:p "I want to show the header with a spectrum of colors I've chosen."
       " Then ... yeah, then what?"]
+     [:p {:style "color: yellow"} "What if plain yellow instead?"]
      [:p "I'd like to lead with a full page -- with a background like this. Then,"
-      " after that, I'd like to be able to scroll smoothly. Just put stuff on the screen, you know."]
-     [:p {:style "color: yellow"} "What if plain yellow instead?"]]]]
+      " after that, I'd like to be able to scroll smoothly. Just put stuff on the screen, you know."]]]]
   [:section {:class "yellow"} #_"lighter green"]
-  [:section {:class "blue"} #_"blue"]
+  [:section {:class "blue"} #_"blue"
+   [:div {:class "anchor"}
+    [:div {:class "textbox"}
+     [:p ]
+     ]]
+
+   ]
   ]]
