@@ -10,7 +10,8 @@
    [:ol
     [:li "Have a worthy persuit"]
     [:li "Take care of your friends"]
-    [:li "Stay true to your principles"]]]
+    [:li "Stay true to your principles"]]
+   [:p "Is that enough?"]]
   [:section {:id "discussion"}
    [:h2 "Discussion"]
    [:p "Comments are much welcome! Please use "
@@ -26,9 +27,9 @@
      " The point is the \"stay true\" part. What does that mean? If you're"
      " not staying true, then you'll feel bad. At least I would. And that's the point."]
     [:p "But \"listen to your heart\" sounds too vague for my taste."]
-    [:p "-Teodor"]]
+    [:p.sig "-Teodor"]]
    [:section
     [:h3 "2021-07-14"]
     [:p "I'm sceptical. This smells too orderly, too simple. Where's the outside influence? Where is the stuff"
      " that's not known? Where are the new worthwhile persuits?"]
-    [:p "-Teodor"]]]]]
+    [:p.sig "-Teodor"]]]]]
