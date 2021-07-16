@@ -63,7 +63,8 @@
      " Though when the screen is small, what should happen? Having it be possible to scroll right is actually not too bad."
      " I would appreciate it if I could avoid destroying the background, though."]
     [:p "Hmm."]
-    [:p "Leaving it as-is for now."]]
+    [:p "Leaving it as-is for now."]
+    [:p.sig "-Teodor"]]
    [:section
     [:p {:style "color: white; margin-left: auto; margin-right: auto; margin-top: 4rem; text-align: center"}
      "What now?"]]]]]
