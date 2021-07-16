@@ -52,7 +52,18 @@
     [:p "I agree that family should be included. \"relationships\" sounds a bit stiff, though."]
     [:p "Perhaps just " [:q "Take care of your friends and family"] "?"]
     [:p "And the principles, yeah, let's hope they're good, though measuring \"good\" is hard! 😄"]
-    [:p.sig "-Teodor"]]
+    [:p.sig "-Teodor"]
+
+    [:p "Found a CSS issue:"]
+    [:p
+     [:img {:style "display: block; margin: 0px auto;"
+            :src "issue-white-background-on-body-overflow.png"}]]
+    [:p "I'm using absolute positioning to display annotations in the right margin."
+     " But I didn't consider overflows I set the background."
+     " Though when the screen is small, what should happen? Having it be possible to scroll right is actually not too bad."
+     " I would appreciate it if I could avoid destroying the background, though."]
+    [:p "Hmm."]
+    [:p "Leaving it as-is for now."]]
    [:section
     [:p {:style "color: white; margin-left: auto; margin-right: auto; margin-top: 4rem; text-align: center"}
      "What now?"]]]]]
