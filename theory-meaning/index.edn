@@ -43,5 +43,12 @@
      " that's not known? Where are the new worthwhile pursuits?"]
     [:p.sig "-Teodor"]]
    [:section
+    [:h3 "2021-07-16"]
+    [:p [:strong "Erik about 3."]
+     " The last one implies that you have good principles :)"]
+    [:p [:strong "Erik about 2."]
+     " What about family? How about \"relationships\" rather than friends?"]
+    [:p "Teodor: I agree, close personal relationships is better."]]
+   [:section
     [:p {:style "color: white; margin-left: auto; margin-right: auto; margin-top: 4rem; text-align: center"}
      "What now?"]]]]]
