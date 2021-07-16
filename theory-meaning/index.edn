@@ -9,7 +9,7 @@
  [:body
   [:section {:id "main"}
    [:section {:style "position: relative;"}
-    [:h1 {:style "color: #FFFFC7"}
+    [:h1 {:style "color: #252525"}
      "A theory of meaning"]
     [:p {:style "position: absolute; left: 30em; color: #3B463E"}
      "Don't really like the heading color."]
