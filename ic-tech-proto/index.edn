@@ -101,8 +101,20 @@
      " Det er " [:em "utenfor"] " Icecalc-produktet vi kan gjøre alle de tingene som ikke skalerer."
      " Skrive noen snutter kode som bruker utvidbarheten i Icecalc til å løse problemer som ikke kan løses på andre vis."
      " Oooog ... hvis de snuttene muliggjør en arbeidsflyt som er mye bedre enn hva de gjør i dag, ... da har plutselig vi noe i Icecalc som Mathcad ikke har, og ikke kan konkurrere med."]
-    [:p ""]
-    ]
+    [:p [:q "Jaja, OK, det var mange ord, Teodor. La oss anta at jeg er enig. I så fall, hva nå?"]]
+    [:p "Eivind er en knallgod første bruker. Vi har jobbet sammen før; Brukt verktøy jeg har laget."
+     " Det kan for eksempel gå for seg sånn:"]
+    [:ol
+     [:li "Jeg har allerede avtalt et møte med Eivind over sommeren, torsdag 5. August."
+      " Da kan vi:"
+      [:ol {:style "list-style-type: lower-alpha"}
+       [:li "Statusoppdatering - gjennomgang av ting som er nytt i Icecalc"]
+       [:li "Plan og status for utvidbarhet i Icecalc. API / FFI / Python / Excel"]
+       [:li [:q "Vi tror at Icecalc kan muliggjøre bedre arbeidsflyter i prosjekt - gjennom parametrisering (bruk Icecalc som input) og gjenbruk (kjør " [:em "ett"] " Icecalc-dokument med forskjellig input"]]
+       [:li "Vi ser etter et prosjekt der vi kan prøve å jobbe sammen på denne måten."]]]
+     [:li "Så -- vi ser etter et prosjekt som faktisk trenger automatisering."]
+     [:li "Konkret hypotese: Python-FFI + templating for å skrive Abaqus-inputfiler direkte."
+      " Her har vi nesten et lettvekts-parametrisk analysesystem fra scratch."]]]
    [:section
     [:p {:style "color: white; margin-top: 4rem; text-align: center"}
      "Do what?"]]
