@@ -10,26 +10,90 @@
   [:section {:id "main"}
    [:section
     [:h1 {:style "color: #252525"}
-     "Icecalc: technical prototyping"]
+     "Icecalc: status & technical prototyping"]
+    [:p "Where are we? Where do we need to go?"]
+    [:h2 "Known limitations"]
+    [:ul
+     [:li "I need to deliver a PDF for work - you can't give it to me"]
+     [:li "You just provide an URL. I need to keep my documents organized."
+      " To do this, I have already established an intricate folder hierarcy. This is on an internal drive."
+      " Simply ignoring this and \"putting it on the web\" won't help me."
+      " There's a reason we're using Microsoft Word, and not Google drive: because we're working with files."
+      " You've removed all my means to organize my work."
+      " I don't accept having to remember a bunch of URLs, why would I."
+      " And the rest of my team won't either - if it doesn't exist in the shared folder, it doesn't exist."]
+     ]
+    [:h2 "Areas for technical prototyping"]
     [:ol
      [:li [:strong "Icealc FFI"] ". Call Icecalc document as a function with HTTP request"]
      [:li [:strong "Icecalc Inspect"] ". Extract Icecalc document structure with HTTP request"]
      [:li "Use Icecalc FFI and Inspect from Python"]
-     [:li "Use Icecalc FFI and Inspect from Excel"]
-     ]]]
+     [:li "Use Icecalc FFI and Inspect from Excel"]]]]
   [:section {:id "discussion"}
    [:section {:style "margin-top: 2em; margin-bottom: 2em"}
     [:p {:style "color: white; text-align: center"}
      "What do?"]]
    [:section
     [:h2 "Discussion"]
-    [:p "What's good? What's bad?"
-     " Discussion volume should probably be larger than main volume."]]
+    [:p "What? Why?"]]
    [:section
     [:h3 "2021-07-17"]
-    [:p "We need to reduce uncertainty"]
-
+    [:p "Jeg satt igjen med noen inntrykk etter møtet med ingeniørene fra Multiconsult."]
+    [:ol
+     [:li "Det er et stykke igjen til vi er bedre enn Mathcad. Vi er ikke det nå. For mange skarpe kanter."
+      " Vi kan snakke så mye vi vil om 80/20 -- men å smelle inn en kritisk feature eller to gjør ikke"
+      " produktet vårt " [:em "bedre"] " enn Mathcad. Vi kommer ikke rundt at vi må gjøre en jobb."
+      " Hvordan organiserer jeg dokumentene mine? Får jeg jobben min ut?"
+      " At jeg personlig " [:em "kunne"] " brukt Icecalc til mye Mathcad-jobbing betyr ikke at vi er bedre enn det som finnes i dag."
+      " Den typen finpuss på produktet vi har igjen er det heller ikke rett å dytte over på folk vi snakker med."
+      " Vi har bedre forutsetninger for å si hva vi bør gjøre -- selv om det hadde vært fint å\"bare få se hvordan en ingeiør jobber\"."
+      " Problemet med det tankesettet er at vi ikke tilbyr noe i relasjonen; og vi velger " [:em "med vilje"] " å gå en " [:em "lang"] " vei før vi kan ta oss betalt, hvis vi skal bli " [:em "bedre"] " enn Mathcad."
+      " " [:q "Kan du bruke Icecalc til å erstatte Mathcad i din hverdag"] " er " [:em "feil spørsmål"] "."]
+     [:li "Å erstatte Mathcad løser ikke noen av de bredere problemene i dagens arbeidsprosess."]
+     [:li "En ingeniør som erstatter Mathcad med Icecalc i prosjektet sitt tjener ingenting på det."]]
+    [:p "Så?"]
+    [:p "En bedre måte å tenke på det, er at at vi kjører " [:em "to"] " spor."]
+    [:ol
+     [:li [:strong "Spor 1"] ": Icecalc som alternativ til Mathcad. Små inkrementelle steg, lav usikkerhet. Begrenset potensial."]
+     [:li [:strong "Spor 2"] ": Neste generasjons ingeniørprosjekt."
+      " Vi " [:em "bruker"] " at vi kontrollerer datamodellen i Icecalc til å gjøre ting som ikke er mulig ellers."
+      " Input til FEM-model? Den kan vi autogenerere. Begynne i Icecalc, fortsette i Excel? Det kan vi få til."]]
+    [:p "Prinsipper for spor 1:"]
+    [:ul
+     [:li "Icecalc skal " [:em "over tid"] " bli et godt alternativ til Mathcad for å gjøre beregninger"]]
+    [:p "Prinsipper for spor 2:"]
+    [:ul
+     [:li [:q "Situational awareness for use of dataflow in engineering projects"]]
+     [:li "Sjekke hvilken verdi vi faktisk kan levere i prosjekter"]
+     [:li "Vil folk bruke greiene våre i reelle prosjekter?"]
+     [:li "Hvordan er betalingsviljen?"]]
+    [:p "Hvorfor gir dette mening?"]
+    [:p "Vi kan ta Tesla-analogien. Først lager vi Model X for de med spesielle behov."
+     " Den er dyr, men unik, du finner den ikke andre steder."
+     " Med Model X kan vi fokusere " [:em "snevert"] " på der vi kan få best feedback på det vi gjør."
+     " Betyr det at vi kun er for de som skal ha Model X? Nei."
+     " Model X gir oss albuerom til å lage Model S. Og Model C. Men vi har ikke ressursene til å gå dit med en gang."]
+    [:p "Vi må starte med å " [:a {:href "http://paulgraham.com/ds.html"} "gjøre ting som ikke skalerer"] "."
+     " Det lønner seg ikke engang å hoppe til masse produksjon; markedet der er for stort."]
+    [:p "Språkbruk, konsulenter, produkter og prosjekter."
+     " Setningen \"vi må inn i prosjekt\" kan tolkes på to " [:em "helt"] " forskjellige vis."
+     " I ingeniørens domene: det som skjer i prosjekt er faktisk jobb, alt annet er ... vel, ekstra"
+     " stæsj som egentlig ikke trengs."
+     " Ja, jeg kan diskutere med dere, og vi kan prate litt sammen, men det er ikke dette som er jobben min."
+     " I vårt Iterate-konsulent-domene: \"det er timesarbeidet vi må komme oss vekk fra\"!"]
+    [:p [:q "Men de må ikke tro vi er konsulenter!"]]
+    [:ul
+     [:li "Iterate-konsulentprosjekt: kunden er en organisasjon ofte ikke har forutsetninger for å"
+      " vuderer verdien på det som blir levert, man ber om greier og får greier."]
+     [:li "Ingeniørprosjekt: Det er veldefinert hva som skal bygges. Og vi jobber, prosjekterer."
+      " Så leverer vi en plan, og er ferdige. Lett å måle."]]
+    [:p "Iterate-konsulentprosjekt: Iterate leverer hoder til en kunde."]
+    [:p "Ingeniør-konsulentprosjekt: Kunden vår er ingeiniører - men de vil ALDRI finne på å leie inn"
+     " konsulenter til å løse sine interproblemer - fordi det ikke gir mening økonomisk."]
+    [:p ""]
     ]
    [:section
     [:p {:style "color: white; margin-top: 4rem; text-align: center"}
-     "Do what?"]]]]]
+     "Do what?"]]
+   [:div {:style "height: 50vh"}]
+   ]]]
