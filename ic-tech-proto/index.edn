@@ -88,8 +88,19 @@
      [:li "Ingeniørprosjekt: Det er veldefinert hva som skal bygges. Og vi jobber, prosjekterer."
       " Så leverer vi en plan, og er ferdige. Lett å måle."]]
     [:p "Iterate-konsulentprosjekt: Iterate leverer hoder til en kunde."]
-    [:p "Ingeniør-konsulentprosjekt: Kunden vår er ingeiniører - men de vil ALDRI finne på å leie inn"
-     " konsulenter til å løse sine interproblemer - fordi det ikke gir mening økonomisk."]
+    [:p "Ingeniør-konsulentprosjekt: Icecalc sin kunde er ingeniør-konsulenter, ingeniør-konsulentents kunde er en oppdragsgiver som skal ha noe bygget."
+     " Ingeniør-konsulentene ville aldri funnet på å leie inn andre konsulenter for å lage verktøy som de kan bruke."
+     " Det hadde vært som om vi skulle leid inn Itera for å bygge Iterapp. Uaktuelt? Nettopp."]
+    [:p " Så " [:em "vi må inn i prosjekt med ingeniørene"] " betyr ikke at vi selger sjelen vår og reverterer til konsulentvirsomhet."
+     " Det betyr at vi plutselig får albuerom til å kunne samarbeide med ingeniørene, og gi ingeniørene albuerom til å samarbeide med oss."]
+    [:p " Gir det mening da?"
+     " For oss i ICE: da får vi sett Icecalc i ekte bruk."
+     " For ingeniør-konsulentene: da får de satt premissene slik at de kan kjøre Model X-en sin, selv om den ennå krever jobb som vi ikke kan fortsette å gjøre i all ende."]
+    [:p [:q "Skal ingeniør-konsulentene få bestemme hva vi skal legge i Icecalc, da?"]
+     " Nei, absoulutt ikke. Det er en forferdelig dårlig idé. Icecalc-produktet " [:em "må"] " holde seg på spor 1: må kunne erstatte Mathcad."
+     " Det er " [:em "utenfor"] " Icecalc-produktet vi kan gjøre alle de tingene som ikke skalerer."
+     " Skrive noen snutter kode som bruker utvidbarheten i Icecalc til å løse problemer som ikke kan løses på andre vis."
+     " Oooog ... hvis de snuttene muliggjør en arbeidsflyt som er mye bedre enn hva de gjør i dag, ... da har plutselig vi noe i Icecalc som Mathcad ikke har, og ikke kan konkurrere med."]
     [:p ""]
     ]
    [:section
