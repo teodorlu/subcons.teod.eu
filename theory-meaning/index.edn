@@ -8,11 +8,9 @@
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
  [:body
   [:section {:id "main"}
-   [:section {:style "position: relative;"}
+   [:section
     [:h1 {:style "color: #252525"}
      "A theory of meaning"]
-    [:p {:style "position: absolute; left: 30em; color: #3B463E"}
-     "Don't really like the heading color."]
     [:ol
      [:li "Have a worthy pursuit"]
      [:li "Take care of your friends and family"]
@@ -56,7 +54,7 @@
 
     [:p "Found a CSS issue:"]
     [:p
-     [:img {:style "display: block; margin: 0px auto;"
+     [:img {:style "display: block; margin: 0px auto; max-width: 100%"
             :src "issue-white-background-on-body-overflow.png"}]]
     [:p "I'm using absolute positioning to display annotations in the right margin."
      " But I didn't consider overflows I set the background."
@@ -64,6 +62,12 @@
      " I would appreciate it if I could avoid destroying the background, though."]
     [:p "Hmm."]
     [:p "Leaving it as-is for now."]
+    [:p.sig "-Teodor"]]
+   [:section
+    [:h3 "2021-07-17"]
+    [:p "It's not worth it to break scrolling - at least not here, now."
+     " Hard to make out-of-context annotations that work well on mobile anyway."
+     " So - remove the annotations, and make sure that images are sized like they should."]
     [:p.sig "-Teodor"]]
    [:section
     [:p {:style "color: white; margin-top: 4rem; text-align: center"}
