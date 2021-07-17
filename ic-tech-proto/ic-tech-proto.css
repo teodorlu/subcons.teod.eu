@@ -1,0 +1,62 @@
+/* ---------------------------------------------------------------------------
+                             TYPOGRAPHY AND SIZING
+ */
+
+a {
+    color: inherit;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+}
+
+body h1 {
+    font-size: 1.6rem;
+}
+
+body h2 {
+    font-size: 1.4rem;
+}
+
+body h3 {
+    font-size: 1.2rem;
+}
+
+body > section {
+    padding: 2em;
+}
+
+/* ---------------------------------------------------------------------------
+                                    SPACING
+*/
+
+body > section > section {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------------------------------------------------------------
+                                 GRAPHIC STYLE
+ */
+
+body > section:nth-child(1) {
+    background-color: #77f87a;
+    color: #1f5768;
+    min-height: 32vh;
+}
+
+body > section:nth-child(2) {
+    background-color: #1f5768;
+    color: #77f87a;
+    min-height: 68vh;
+}
+
+body > section:nth-child(2) h2,h3 {
+    color: yellow;
+}
+
+.sig {
+    color: #ffb703;
+}

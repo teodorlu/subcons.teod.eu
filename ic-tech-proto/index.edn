@@ -1,0 +1,35 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "Icecalc: technical prototyping"]
+  [:link {:rel "stylesheet" :href "ic-tech-proto.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:section {:id "main"}
+   [:section
+    [:h1 {:style "color: #252525"}
+     "Icecalc: technical prototyping"]
+    [:ol
+     [:li [:strong "Icealc FFI"] ". Call Icecalc document as a function with HTTP request"]
+     [:li [:strong "Icecalc Inspect"] ". Extract Icecalc document structure with HTTP request"]
+     [:li "Use Icecalc FFI and Inspect from Python"]
+     [:li "Use Icecalc FFI and Inspect from Excel"]
+     ]]]
+  [:section {:id "discussion"}
+   [:section {:style "margin-top: 2em; margin-bottom: 2em"}
+    [:p {:style "color: white; text-align: center"}
+     "What do?"]]
+   [:section
+    [:h2 "Discussion"]
+    [:p "What's good? What's bad?"
+     " Discussion volume should probably be larger than main volume."]]
+   [:section
+    [:h3 "2021-07-17"]
+    [:p "We need to reduce uncertainty"]
+
+    ]
+   [:section
+    [:p {:style "color: white; margin-top: 4rem; text-align: center"}
+     "Do what?"]]]]]
