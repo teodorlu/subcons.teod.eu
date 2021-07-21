@@ -43,5 +43,10 @@
     [:p " — without a space each place. I could add my own p component to get that."
      " Then, perhaps, I need ... a way to ..."
      " define a set of components, and enable them."]
-    [:div {:style "height: 20em;"}]
-    ]]]]
+    [:p "Oh, I know. I want the background to be " [:em "static"] "."
+     " It's the background that shouldn't scroll with the text."
+     " It's the background that should be out of document flow."
+     " It's the background that should have funny positioning; not the foreground."]
+    [:p "Though I'm not quite sure how to achieve that yet."]
+    [:p "Guess I have something to learn."]
+    [:div {:style "height: 20em;"}]]]]]
