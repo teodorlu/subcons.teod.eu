@@ -11,4 +11,37 @@
   [:section {:style "background-color: #43a047"}]
   [:section {:style "background-color: #77f87a"}]
   [:section {:style "background-color: #1f5768"}]
-  ]]
+  [:div {:style "position: absolute; margin: 4em; background-color: white;"}
+   [:section.spaced {:style "margin: 2em"}
+    [:p "It's too dark, there needs to be some rest."]
+    [:p "Plain white? Plan black?"]
+    [:p "Too much? Not sure."]
+    [:p "How do I ensure that this maximizes? Does it overflow if I break a line?"
+     " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?"
+     " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?"
+     " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?" " Does it?"]
+    [:p "No, it does not."]
+    [:p "It keeps going 'till the morning comes."]
+    [:p "But I do like this background. A flag."]
+    [:p "I could consider a ... yellow ... a yellow that works like white, but"
+     " stays in the color scheme."
+     " A yellow that's subtle; and can be used interchangably with white."]
+    [:p "A yellow?"]
+    [:p "A yellow?"]
+    [:p "A yellow?"]
+    [:p "A yellow?"]
+    [:p "A yellow?"]
+    [:p "A yellow?"]
+    [:p "Perhaps a yellow, yes."]
+    [:p "We fail — the background does not follow. But ..."
+     " what would we have expected? I don't know."]
+    [:p "What wold we have wanted? Not this, to be sure. Not this."]
+    [:p "I would have liked to ble able to write plain"]
+    [:div {:style "margin-left: 4em;"}
+     [:pre {:style "font-size: 14px"}
+      "[p \"A sentence.\" \"Another.\"]"]]
+    [:p " — without a space each place. I could add my own p component to get that."
+     " Then, perhaps, I need ... a way to ..."
+     " define a set of components, and enable them."]
+    [:div {:style "height: 20em;"}]
+    ]]]]

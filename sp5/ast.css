@@ -16,3 +16,8 @@ body {
 body > section {
     flex-grow: 1;
 }
+
+.spaced > p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
