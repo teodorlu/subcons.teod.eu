@@ -1,0 +1,37 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "-"]
+  [:link {:rel "stylesheet" :href "ic-tech-proto.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:p "If fact is trivial, taste is not."]
+  [:p [:strong "One extreme."]
+   " I am a bastion of facts, I will not meddle in the petty"
+   " disputes of taste. Taste is below me, taste is subjective."
+   " Matters of " [:q "taste"] " are not of my taste."]
+  [:p [:strong "Another extreme."]
+   " I am correct. I strive to be objective, and I succeed."
+   " Your opinion should be the same as mine, otherwise you are wrong."
+   " Thouhg you dare call what I say " [:q "taste"] "?"
+   " You imbecile. You fail to understand."
+   " This is not up for discussion, for it is not my opinion; it is fact."]
+  [:p [:strong "Yet another extreme."]
+   " So you are unable to contrast your taste with mine?"
+   " Do you not have language for the critique of taste?"
+   " Sorry — then you may not take part in this conversation."
+   " Please move ahead."]
+  [:p "The limitation of fact is " [:em "interpretation"] "."
+   " A set of facts have multiple possible interpretations."
+   " " [:q "Which one is right?"] " is the wrong question;"
+   " that pulls us straight back into the domain of facts."
+   " And interpretations are not facts."]
+  [:p "Utility is a language of taste."
+   " Or? It is not a language for expressing taste, but it is a language"
+   " for talking how taste affects us (phenomenologically), without"
+   " presuming it is all fact."]
+  [:p "Utility will only ever represent a fragment of taste. An aspect."
+   " But can the whole ever be contained?"
+   " If utility is only ever the facticity of taste, what is its transcendence?"]]]
