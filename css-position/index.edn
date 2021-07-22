@@ -10,10 +10,7 @@
   [:p "Push the learning out."]
   [:p "Possible position values:"
    " static, relative, absolute, fixed, sticky, inherit, initial, revert, unset"]
-
   [dl
    "Static" "Normal document flow."
    "Relative" "??"
-   "Absolute" "??"]
-
-  ]]
+   "Absolute" "??"]]]

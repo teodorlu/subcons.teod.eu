@@ -26,6 +26,3 @@
                                  (apply dl form)
                                  :else form))
                          hiccup))
-
-(transform [:html ['dl "relative" "relative stuff"
-                   "absolute" "absolute stuff"]])
