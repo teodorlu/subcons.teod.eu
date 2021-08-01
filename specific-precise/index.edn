@@ -7,11 +7,17 @@
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]]
  [:body
-  [:p "Scale: specific <--> general"]
-  [:p "Scale: precise <--> vague"]
   [:p "It's possible to be precise about generalities (good philosophy), and it's possible to"
    " be precise about specifics (good measurement, good planning)."]
+  [:p "For example:"]
   [:table
    [:tr [:td ""]                  [:td [:strong "Specific"]]                                 [:td [:strong "General"]]]
    [:tr [:td [:strong "Precise"]] [:td "Good measurement, solid observation, good planning"] [:td "Good philosophy"]]
-   [:tr [:td [:strong "Vague"]]   [:td "Stuff that's plain wrong."]                          [:td "Getting lost in abstraction"]]]]]
+   [:tr [:td [:strong "Vague"]]   [:td "Stuff that's plain wrong."]                          [:td "Getting lost in abstraction"]]]
+  [:p "Or:"]
+  [:table
+   [:tr [:td ""]                  [:td [:strong "Specific"]]           [:td [:strong "General"]]]
+   [:tr [:td [:strong "Precise"]] [:td "Good logic, good mathematics"] [:td "Detail"]]
+   [:tr [:td [:strong "Vague"]]   [:td "Error"]                        [:td "Equivocation"]]]
+  [:p "Which set of examples would you prefer? Why?"]
+  ]]
