@@ -6,3 +6,6 @@ tmp/
 
 /.cpcache
 /.nrepl-port
+/autodiff/.cache/
+/autodiff/.cpcache/
+/autodiff/.nrepl-port
