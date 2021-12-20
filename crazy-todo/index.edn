@@ -1,0 +1,15 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "teod/crazy-todo"]
+  [:link {:rel "stylesheet" :href "crazy-todo.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:section {:id "main"}
+   [:section
+    [:h1 {:style "color: #252525"}
+     "Crazy-todo"]
+    [:ol
+     [:li "Write your own Emacs plugin with transient"]]]]]]
