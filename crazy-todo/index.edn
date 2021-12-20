@@ -24,4 +24,7 @@
            :target "_blank"}
        "Clerk"]
       "?"]
-     ]]]]]
+     ]
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"}
+                                   "https://subcons.teod.eu/crazy-todo/"]]
+    ]]]]
