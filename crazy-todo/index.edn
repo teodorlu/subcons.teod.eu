@@ -11,7 +11,7 @@
    [:section
     [:h1 {:style "color: #252525"}
      "Crazy-todo"]
-    [:p "What would I do if I was " [:em "really"] " crazy?"]
+    [:p "Aspirational TODOs — no commitments."]
     [:ol
      [:li [:p "Write your own Emacs plugin with transient."]
       [:p "Can I use Magit Transients as a Pacman interface?" ]
