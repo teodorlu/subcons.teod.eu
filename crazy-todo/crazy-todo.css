@@ -41,6 +41,10 @@ body > * > section {
                                  GRAPHIC STYLE
  */
 
+html,body {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -49,14 +53,12 @@ body {
 body > main {
     background-color: #77f87a;
     color: #1f5768;
-    /* min-height: 32vh; */
     flex: 1;
 }
 
 body > section:nth-child(2) {
     background-color: #1f5768;
     color: #77f87a;
-    min-height: 68vh;
 }
 
 body > section:nth-child(2) h2,h3 {
