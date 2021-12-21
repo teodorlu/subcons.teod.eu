@@ -31,7 +31,7 @@ body > section {
                                     SPACING
 */
 
-body > section > section {
+body > * > section {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
@@ -41,10 +41,16 @@ body > section > section {
                                  GRAPHIC STYLE
  */
 
-body > section:nth-child(1) {
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
     background-color: #77f87a;
     color: #1f5768;
-    min-height: 32vh;
+    /* min-height: 32vh; */
+    flex: 1;
 }
 
 body > section:nth-child(2) {

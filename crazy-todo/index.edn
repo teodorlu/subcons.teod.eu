@@ -7,7 +7,7 @@
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
  [:body
-  [:section {:id "main"}
+  [:main
    [:section
     [:h1 {:style "color: #252525"}
      "Crazy-todo"]
@@ -27,4 +27,7 @@
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"
                                        :target "_blank"}
                                    "https://subcons.teod.eu/crazy-todo/"]]
-    ]]]]
+    ]
+   ]
+
+  ]]
