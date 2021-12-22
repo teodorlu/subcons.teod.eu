@@ -11,7 +11,8 @@
    "doomemacs-journey/index.edn"
    "sp/index.edn"
    "ast/index.edn"
-   "crazy-todo/index.edn"])
+   "crazy-todo/index.edn"
+   "freedom-truth-fire/index.edn"])
 
 (defn build-all
   "One-off - build EDN files."
