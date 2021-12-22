@@ -9,6 +9,7 @@
  [:body
   [:main
    [:section
+    [:p [:a {:href ".."} ".."]]
     [:h3 {:style "color: #252525"}
      "Are you bored yet?"]
     [:p "bored?"]]]]]

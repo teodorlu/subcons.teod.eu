@@ -9,6 +9,7 @@
  [:body
   [:section {:id "main"}
    [:section
+    [:p [:a {:href ".."} ".."]]
     [:h1 {:style "color: #252525"}
      "A theory of meaning"]
     [:ol

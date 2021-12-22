@@ -9,6 +9,7 @@
  [:body
   [:main
    [:section
+    [:p [:a {:href ".."} ".."]]
     [:h1 {:style "color: #252525"}
      "Crazy-todo"]
     [:p "Aspirational TODOs — no commitments."]
@@ -26,8 +27,4 @@
       "?"]]
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"
                                        :target "_blank"}
-                                   "https://subcons.teod.eu/crazy-todo/"]]
-    ]
-   ]
-
-  ]]
+                                   "https://subcons.teod.eu/crazy-todo/"]]]]]]
