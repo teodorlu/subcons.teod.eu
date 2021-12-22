@@ -70,9 +70,9 @@
     [:p "Hvorfor gir dette mening?"]
     [:p "Vi kan ta Tesla-analogien. Først lager vi Roadster for de med spesielle behov."
      " Den er dyr, men unik, du finner den ikke andre steder."
-     " Med Model X kan vi fokusere " [:em "snevert"] " på der vi kan få best feedback på det vi gjør."
-     " Betyr det at vi kun er for de som skal ha Model X? Nei."
-     " Model X gir oss albuerom til å lage Model S. Og Model C. Men vi har ikke ressursene til å gå dit med en gang."]
+     " Med Roadster kan vi fokusere " [:em "snevert"] " på der vi kan få best feedback på det vi gjør."
+     " Betyr det at vi kun er for de som skal ha Roadster? Nei."
+     " Roadster gir oss albuerom til å lage Model S. Og Model C. Men vi har ikke ressursene til å gå dit med en gang."]
     [:p "Vi må starte med å " [:a {:href "http://paulgraham.com/ds.html"} "gjøre ting som ikke skalerer"] "."
      " Det lønner seg ikke engang å hoppe til masse produksjon; markedet der er for stort."]
     [:p "Språkbruk, konsulenter, produkter og prosjekter."
@@ -95,7 +95,7 @@
      " Det betyr at vi plutselig får albuerom til å kunne samarbeide med ingeniørene, og gi ingeniørene albuerom til å samarbeide med oss."]
     [:p " Gir det mening da?"
      " For oss i ICE: da får vi sett Icecalc i ekte bruk."
-     " For ingeniør-konsulentene: da får de satt premissene slik at de kan kjøre Model X-en sin, selv om den ennå krever jobb som vi ikke kan fortsette å gjøre i all ende."]
+     " For ingeniør-konsulentene: da får de satt premissene slik at de kan kjøre Roadsteren sin, selv om den ennå krever jobb som vi ikke kan fortsette å gjøre i all ende."]
     [:p [:q "Skal ingeniør-konsulentene få bestemme hva vi skal legge i Icecalc, da?"]
      " Nei, absoulutt ikke. Det er en forferdelig dårlig idé. Icecalc-produktet " [:em "må"] " holde seg på spor 1: må kunne erstatte Mathcad."
      " Det er " [:em "utenfor"] " Icecalc-produktet vi kan gjøre alle de tingene som ikke skalerer."
