@@ -14,6 +14,7 @@
      "Freedom / Truth / Fire"]
     [:p "TODO merge from twitter"]
     [:p "TODO summarize"]
+    [:p "TODO - provide Nitter link / embed"]
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/freedom-truth-fire/"
                                        :target "_blank"}
                                    "https://subcons.teod.eu/freedom-truth-fire/"]]]]]]
