@@ -2,7 +2,7 @@
 [:html
  [:head
   [:meta {:charset "utf-8"}]
-  [:title "teod/crazy-todo"]
+  [:title "ARE YOU BORED YET"]
   [:link {:rel "stylesheet" :href "bored.css"}]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
