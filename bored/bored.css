@@ -3,28 +3,28 @@
  */
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 body {
-    font-size: 1rem;
-    margin: 0;
+  font-size: 1rem;
+  margin: 0;
 }
 
 body h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 body h2 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 body h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 body > section {
-    padding: 2em;
+  padding: 2em;
 }
 
 /* ---------------------------------------------------------------------------
@@ -32,39 +32,42 @@ body > section {
 */
 
 body > * > section {
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------------------------------------------------------------------------
                                  GRAPHIC STYLE
  */
 
-html,body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 body > main {
-    background-color: #77f87a;
-    color: #1f5768;
-    flex: 1;
+  background-color: #77f87a;
+  flex: 1;
 }
 
-body > section:nth-child(2) {
-    background-color: #1f5768;
-    color: #77f87a;
+/* Fallback color */
+body > main {
+  /* color: #1f5768; */
+  color: #0c3441;
 }
 
-body > section:nth-child(2) h2,h3 {
-    color: yellow;
-}
-
-.sig {
-    color: #ffb703;
+/* headings */
+body > main h1,
+body > main h2,
+body > main h3,
+body > main h4,
+body > main h5,
+body > main h6 {
+  color: #222;
 }

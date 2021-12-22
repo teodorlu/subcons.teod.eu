@@ -8,8 +8,32 @@
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
  [:body
   [:main
-   [:section
-    [:p [:a {:href ".."} ".."]]
-    [:h3 {:style "color: #252525"}
-     "Are you bored yet?"]
-    [:p "bored?"]]]]]
+   [:section [:p [:a {:href ".."} ".."]]]
+   [:section [:h3 "Are you bored yet?"]
+    [:p "bored?"]
+    [:p "What to do when bored? Learn hard things. Learn Emacs. Do stuff."]
+    [:p "A start is Magit's source code. How does it call Git commands?"]]
+   [:section [:h3 "Research questions"]
+    [:p "Questions is a good place to start."]
+    [:ul
+     [:li "What's an Emacs " [:em "defgroup"] "?"]
+     [:li "How does Magit run shell commands?"]
+     [:li "What is a major mode, really?"]]]
+   [:section [:h3 "Approach: read source, try to get an overview."]
+    [:p "Note - " [:code "SPC s i"] " makes it easy to browse a file's structure."]
+    [:p "Emacs' rebase major mode is defined with " [:em "define-derived-mode"] "."
+     " It refers to another mode - a parent perhaps? - " [:em "special-mode"] "."]
+    [:p "Looks like all modes should inherit from " [:em "special-mode"] "."]
+    [:p "Found it!"]
+    [:pre [:code "(magit-run-git-async \"push\" \"-v\" args remote (concat branch \":\" merge))"]]
+    [:p "from " [:em "magit-process.el"] "."]
+
+    [:p "It bottoms out in " [:em "magit-start-process"] "."
+     " 54 lines of compact Emacs Lisp! It hurts!"]
+    [:p "but .. really ... should this not be .. easy? or ...?"
+     " Well, perhaps not. Not if I want to have a nice Emacs interface. It's not only about mapping commands around,"
+     " it's about selection, installation, etc."]
+
+    ]
+
+   ]]]
