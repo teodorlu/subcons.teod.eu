@@ -15,6 +15,6 @@
     [:details [:summary "Theory & narrative"]
      [:p "xxx"]]
     ;; Note - I'd like to expose this as a function / reusable component
-    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/articles-i-want-to-write/"
                                        :target "_blank"}
-                                   "https://subcons.teod.eu/crazy-todo/"]]]]]]
+                                   "https://subcons.teod.eu/articles-i-want-to-write/"]]]]]]
