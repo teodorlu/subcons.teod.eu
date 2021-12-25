@@ -28,6 +28,19 @@
            :target "_blank"}
        "Clerk"]
       "?"]]
+    [:details [:summary "SCI to be able to abstract over components in a page"]
+     [:p "It would be handy to be able to abstract over HTML (EDN) on this page."
+      " I think " [:a {:href "https://github.com/babashka/sci"} "sci"] " might work well for just that."
+      " Is it enough to simply pipe the whole EDN into sci - before rendering with hiccup?"]
+     [:p "Option: pipe page through sci interpreter."]
+     [:p "Option: custom sci element as function call - hook via multimethod."
+      " Seems to be more complex, not clear exactly what the benefit is."]]
+    [:details [:summary "Expose nice opt-in \"transform from org-mode\" function"]
+     [:p "How to implement? Function call directly in EDN - like " [:em "(org \"file.org\")"] "?"]
+     [:p "What should the return value be? Should the function simply return data?"
+      " For plain data, I could use pandoc to transform to JSON."
+      " If not plain data - then what? I want to loose document coupling."]
+     ]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
                                        :target "_blank"}
