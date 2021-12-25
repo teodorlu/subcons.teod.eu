@@ -1,0 +1,20 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "Articles I want to write"]
+  [:link {:rel "stylesheet" :href "crazy-todo.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:main
+   [:section
+    [:p [:a {:href ".."} ".."]]
+    [:h1 {:style "color: #252525"}
+     "Articles I want to write"]
+    [:details [:summary "Theory & narrative"]
+     [:p "xxx"]]
+    ;; Note - I'd like to expose this as a function / reusable component
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"
+                                       :target "_blank"}
+                                   "https://subcons.teod.eu/crazy-todo/"]]]]]]
