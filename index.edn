@@ -20,5 +20,4 @@
     [:li [:a {:href "sp4"} "sp4/"]]
     [:li [:a {:href "porta1"} "porta1"]]
     [:li [:a {:href "porta2"} "porta2"]]
-    [:li [:a {:href "crazy-todo/"} "crazy-todo"]]
     [:li [:a {:href "bored/"} "bored"]]]]]]

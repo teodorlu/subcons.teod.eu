@@ -12,13 +12,6 @@
     [:p [:a {:href ".."} ".."]]
     [:h1 {:style "color: #252525"}
      "Crazy-todo"]
-    [:p "Aspirational TODOs — no commitments."]
-    [:ol
-     [:li "How do I want to put code on here? Is there a nice way to integrate with "
-      [:a {:href "https://nextjournal.github.io/clerk-demo/"
-           :target "_blank"}
-       "Clerk"]
-      "?"]]
-    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/crazy-todo/"
-                                       :target "_blank"}
-                                   "https://subcons.teod.eu/crazy-todo/"]]]]]]
+    [:p "This page has moved: "
+     [:a {:href "../aspirational-todo/"}
+      "Aspirational TODO"]]]]]]

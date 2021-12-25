@@ -22,6 +22,12 @@
       [:a {:href "https://magit.vc/manual/transient/Introduction.html#Introduction"
            :target "_blank"}
        "Introduction (magit.vc/manual/transient)"] "."]]
+    [:details [:summary "Tooling / system for literate programming"]
+     [:p "How do I want to put code on here? Is there a nice way to integrate with "
+      [:a {:href "https://nextjournal.github.io/clerk-demo/"
+           :target "_blank"}
+       "Clerk"]
+      "?"]]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
                                        :target "_blank"}
