@@ -2,6 +2,8 @@
 [:html
  [:head
   [:meta {:charset "utf-8"}]
+  [:meta {:http-equiv "refresh"
+          :content "5; URL=../aspirational-todo/"}]
   [:title "teod/crazy-todo"]
   [:link {:rel "stylesheet" :href "crazy-todo.css"}]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
@@ -12,6 +14,6 @@
     [:p [:a {:href ".."} ".."]]
     [:h1 {:style "color: #252525"}
      "Crazy-todo"]
-    [:p "This page has moved: "
-     [:a {:href "../aspirational-todo/"}
-      "Aspirational TODO"]]]]]]
+    [:p "This page has moved: " [:a {:href "../aspirational-todo/"} "Aspirational TODO"]]
+    [:p "You will be redirected in 5 seconds."]
+    ]]]]
