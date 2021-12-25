@@ -1,0 +1,28 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "Aspirational TODO"]
+  [:link {:rel "stylesheet" :href "style.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:main
+   [:section
+    [:p [:a {:href ".."} ".."]]
+    [:h1 {:style "color: #252525"}
+     "Aspirational TODO"]
+    [:p "Articles I want to write. Mechanisms I want to create. Ideas I want to explore."]
+    [:details [:summary "Article: Theory & narrative"]
+     [:p "Science builds theory. Culture builds narrative. We need both."
+      " I'd like to write a sort of ... exploration for both sides."]]
+    [:details [:summary "Write your own Emacs plugin with transient."]
+     [:p "Can I use Magit Transients as a Pacman interface?" ]
+     [:p "Magit's manual is great — see "
+      [:a {:href "https://magit.vc/manual/transient/Introduction.html#Introduction"
+           :target "_blank"}
+       "Introduction (magit.vc/manual/transient)"] "."]]
+    ;; View on web - Can this be a function / reusable component?
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
+                                       :target "_blank"}
+                                   "https://subcons.teod.eu/aspirational-todo/"]]]]]]

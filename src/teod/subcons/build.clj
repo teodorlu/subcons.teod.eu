@@ -7,6 +7,7 @@
 
 (defn edn-paths []
   ["index.edn"
+   "aspirational-todo/index.edn"
    "theory-meaning/index.edn"
    "doomemacs-journey/index.edn"
    "sp/index.edn"

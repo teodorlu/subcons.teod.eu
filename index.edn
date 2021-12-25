@@ -13,7 +13,7 @@
    [:p [:em "Internet. The place of advice without context."]]
    [:p "Places not of reason include:"]
    [:ul
-    [:li [:a {:href "articles-i-want-to-write/"} "Articles I want to write"]]
+    [:li [:a {:href "aspirational-todo/"} "Aspirational TODO"]]
     [:li [:a {:href "theory-meaning/"} "A theory of meaning"]]
     [:li [:a {:href "doomemacs-journey/"} "A Doom Emacs journey"]]
     [:li [:a {:href "sp3"} "sp3/"]]

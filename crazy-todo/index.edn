@@ -14,12 +14,6 @@
      "Crazy-todo"]
     [:p "Aspirational TODOs — no commitments."]
     [:ol
-     [:li [:p "Write your own Emacs plugin with transient."]
-      [:p "Can I use Magit Transients as a Pacman interface?" ]
-      [:p "Magit's manual is great — see "
-       [:a {:href "https://magit.vc/manual/transient/Introduction.html#Introduction"
-            :target "_blank"}
-        "Introduction (magit.vc/manual/transient)"] "."]]
      [:li "How do I want to put code on here? Is there a nice way to integrate with "
       [:a {:href "https://nextjournal.github.io/clerk-demo/"
            :target "_blank"}
