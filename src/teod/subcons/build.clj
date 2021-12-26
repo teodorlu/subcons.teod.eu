@@ -4,7 +4,6 @@
             [teod.subcons.builder :as builder]
             [hawk.core :as hawk]))
 
-
 (defonce watcher (atom nil))
 
 (defn watch-rebuild-edn-stop!
