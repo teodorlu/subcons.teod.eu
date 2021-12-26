@@ -22,7 +22,9 @@
        (= "index.edn"
           (.getName file))))
 
-(defn watch-rebuild-edn-handler [_ctx e]
+(defn watch-rebuild-edn-handler
+  "Provides information on file source @ :teod.subcons/source-path"
+  [_ctx e]
   (let [{:keys [_kind file]} e]
     (try
       (let [edn-path (.getPath file)
