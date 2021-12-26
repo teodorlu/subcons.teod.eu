@@ -45,14 +45,3 @@ return {"a": 1 / (1 + f) * 100,
 ** design?
 I feel like I'm approaching a place where I can /play/ with styles. Still don't
 feel like I'm /doing/ design.
-* wats 2021-07-14
-Ideas:
-
-1. Metadata on toplevel EDN to hook into builder
-2. Metadata or HTML elements or EDN readers to transform
-
-NOW: can an EDN file have metadata? That would be nice.
-
-#+begin_src clojure
-{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
-#+end_src
