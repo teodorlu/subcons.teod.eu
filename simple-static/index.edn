@@ -1,0 +1,47 @@
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "Aspirational TODO"]
+  [:link {:rel "stylesheet" :href "style.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:main
+   [:section
+    [:p [:a {:href ".."} ".."]]
+    [:h1 {:style "color: #252525"}
+     "Aspirational TODO"]
+    [:p "Articles I want to write. Mechanisms I want to create. Ideas I want to explore."]
+    [:details [:summary "Article: Theory & narrative"]
+     [:p "Science builds theory. Culture builds narrative. We need both."
+      " I'd like to write a sort of ... exploration for both sides."]]
+    [:details [:summary "Write your own Emacs plugin with transient."]
+     [:p "Can I use Magit Transients as a Pacman interface?" ]
+     [:p "Magit's manual is great — see "
+      [:a {:href "https://magit.vc/manual/transient/Introduction.html#Introduction"
+           :target "_blank"}
+       "Introduction (magit.vc/manual/transient)"] "."]]
+    [:details [:summary "Tooling / system for literate programming"]
+     [:p "How do I want to put code on here? Is there a nice way to integrate with "
+      [:a {:href "https://nextjournal.github.io/clerk-demo/"
+           :target "_blank"}
+       "Clerk"]
+      "?"]]
+    [:details [:summary "SCI to be able to abstract over components in a page"]
+     [:p "It would be handy to be able to abstract over HTML (EDN) on this page."
+      " I think " [:a {:href "https://github.com/babashka/sci"} "sci"] " might work well for just that."
+      " Is it enough to simply pipe the whole EDN into sci - before rendering with hiccup?"]
+     [:p "Option: pipe page through sci interpreter."]
+     [:p "Option: custom sci element as function call - hook via multimethod."
+      " Seems to be more complex, not clear exactly what the benefit is."]]
+    [:details [:summary "Expose nice opt-in \"transform from org-mode\" function"]
+     [:p "How to implement? Function call directly in EDN - like " [:em "(org \"file.org\")"] "?"]
+     [:p "What should the return value be? Should the function simply return data?"
+      " For plain data, I could use pandoc to transform to JSON."
+      " If not plain data - then what? I want to loose document coupling."]
+     ]
+    ;; View on web - Can this be a function / reusable component?
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
+                                       :target "_blank"}
+                                   "https://subcons.teod.eu/aspirational-todo/"]]]]]]
