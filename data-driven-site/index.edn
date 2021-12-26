@@ -25,7 +25,7 @@
       [:h1 {:style "color: #252525"}
        title]
       [:p "My " [:a {:href teodorheggelund-com} "old static site"]
-       " setup was complex. I didn't really know how it worked."
+       " setup was complex. I didn't really understand how it worked."
        " And it took half an hour to compile. Why? I used " [:a {:href hakyll} "Hakyll"]
        " (which is great), and compiled Pandoc from source"
        " (which I don't recommend)."
