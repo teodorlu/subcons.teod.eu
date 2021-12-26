@@ -26,12 +26,12 @@
   (let [{:keys [_kind file]} e]
     (try
       (let [edn-path (.getPath file)
-            _ (println "building" edn-path "...")
+            _ (print "building" edn-path "...")
             edn (-> edn-path slurp edn/read-string
                     (vary-meta assoc :teod.subcons/source-path edn-path)
                     transform/transform)]
         (builder/builder edn)
-        (println "Done."))
+        (println " done."))
       (catch Throwable t
         (println "Faied!")
         (clojure.stacktrace/print-stack-trace t)))))
