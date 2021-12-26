@@ -1,9 +1,6 @@
 #+TITLE: Ideas
 
-* wats 2021-07-15
-1. I want to be able to hit the buttons from the index page
-2. I want prettier documents
-** golden ratio
+* golden ratio computation - with literate Org-mode / Python
 Golden ratio: 1.618
 
 1. B/A = f
