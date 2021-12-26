@@ -8,11 +8,13 @@
       github-edn "https://github.com/teodorlu/subcons.teod.eu/blob/fa048e7/data-driven-site/index.edn"
       github-build "https://github.com/teodorlu/subcons.teod.eu/blob/fa048e7/src/teod/subcons/build.clj"
       github-html "https://github.com/teodorlu/subcons.teod.eu/blob/fa048e7/data-driven-site/index.html"
+      title "A data-driven approach to static sites"
+      teodorheggelund-com "https://www.teodorheggelund.com/"
       ]
   [:html
    [:head
     [:meta {:charset "utf-8"}]
-    [:title "Aspirational TODO"]
+    [:title title]
     [:link {:rel "stylesheet" :href "style.css"}]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
     [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
@@ -21,8 +23,8 @@
      [:section
       [:p [:a {:href ".."} ".."]]
       [:h1 {:style "color: #252525"}
-       "A data-driven approach to static sites"]
-      [:p "My " [:a {:href "https://www.teodorheggelund.com/"} "old static site"]
+       title]
+      [:p "My " [:a {:href teodorheggelund-com} "old static site"]
        " setup was complex. I didn't really know how it worked."
        " And it took half an hour to compile. Why? I used " [:a {:href hakyll} "Hakyll"]
        " (which is great), and compiled Pandoc from source"
