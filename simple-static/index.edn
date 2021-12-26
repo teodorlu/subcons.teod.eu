@@ -1,5 +1,5 @@
 ^{:teod.subcons/builder :teod.subcons.builder/hiccup-html
-  :teod.subcons/transformers [eu.teod.subcons.sci/eval]}
+  :teod.subcons/transformers [teod.subcons.sci/eval]}
 [:html
  [:head
   [:meta {:charset "utf-8"}]
