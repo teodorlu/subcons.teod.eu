@@ -3,15 +3,6 @@
 * wats 2021-07-15
 1. I want to be able to hit the buttons from the index page
 2. I want prettier documents
-** stp1
-Now?
-
-What pains me most is the horrendous navigation. And why does the root page
-scroll on mobile?
-** Happening? No.
-Infinite malleability.
-
-I need a nice orange for contrast to the green, nice warm orange.
 ** golden ratio
 Golden ratio: 1.618
 
