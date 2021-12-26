@@ -3,19 +3,18 @@
 * Local development
 Requirements:
 
+- Babashka. Development environment and task runner.
 - Clojure. Static site generation system.
 - Nodejs. Only for =live-server= - which is used for local development
 
-To work on EDN files producing HTML, simply
+To work on pages, run:
 
 #+begin_src
-bin/watch &
-bin/live-server
+bb build+watch
 #+end_src
 
-. We keep HTML version controlled, so when you've made changes, simply check in
-the changed HTML and push. There is no remote builder -- this folder is simply
-served as-is.
+Generated HTML is /checked into git/. This way, it's easy to see where changes
+have been made. It also means that there is no separate build step.
 * How to view live server output on a mobile device
 You can view the live server directly on a mobile device, just find the local
 network IP of the computer you're using.

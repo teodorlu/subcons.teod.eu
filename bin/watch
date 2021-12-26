@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec clojure -X teod.subcons.build/watch!
