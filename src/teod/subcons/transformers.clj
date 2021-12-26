@@ -2,35 +2,24 @@
   (:refer-clojure :exclude [eval])
   (:require [teod.subcons.sci]))
 
-(do
-
-  (defn transform [edn]
+(defn transform [edn]
     (let [transformers (:teod.subcons/transformers (meta edn)
                                                     [])
           edn-nometa (with-meta edn {})]
       (reduce (fn [val trans]
                 (if-let [f (requiring-resolve trans)]
                   (f val)
-                  val))
+                  (do
+                    (println "Error transforming EDN ")
+
+                    val)))
               edn-nometa
               transformers)))
 
+(comment
+  ;; mechanism for hooking into arbitrary functions via metadata
   (transform ^{:teod.subcons/transformers ['teod.subcons.sci/eval]}
              {:name "Teodor"
               :level '(+ 2 9000)})
-
-  #_
-  (sci-eval {:name "Teodor"
-             :level '(+ 2 9000)})
-
+  ;; => {:name "Teodor", :level 9002}
   )
-
-(let [f (requiring-resolve 'teod.subcons.sci/eval)]
-  (f {:name "Teodor"
-      :level '(+ 2 9000)})
-  )
-
-(let [obj ^{:teod.subcons/transformers ['teod.subcons.sci/eval]}
-      {:name "Teodor"
-       :level '(+ 2 9000)}]
-  (meta obj))
