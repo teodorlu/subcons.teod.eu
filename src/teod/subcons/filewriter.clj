@@ -1,15 +1,9 @@
 (ns teod.subcons.filewriter
   "A builder takes EDN and produces an output file.
 
-  EDN source files pick their builder via metadata."
+  An EDN source files pick its writer with metadata."
   (:require [hiccup2.core]
             [clojure.string :as str]))
-
-;; Write different kinds of files.
-;;
-;; Provide file writer via EDN metadata:
-;;
-;;
 
 (defmulti write (fn [edn]
                     (-> edn meta :teod.subcons/filewriter)))
