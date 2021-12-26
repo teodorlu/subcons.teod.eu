@@ -1,0 +1,24 @@
+^{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
+[:html
+ [:head
+  [:meta {:charset "utf-8"}]
+  [:title "Ideas on trial"]
+  [:link {:rel "stylesheet" :href "style.css"}]
+  [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+  [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]]
+ [:body
+  [:main
+   [:section
+    [:p [:a {:href ".."} ".."]]
+    [:h1 {:style "color: #252525"}
+     "Ideas on trial"]
+    [:p "Good? Bad? Let's taste the waters and observe what stands the test of time."]
+    [:p "Note: I'd really like org-mode outlining functionality for just this."
+     " But that outline functionality also requires me to get some way with SCI."
+     " — which I haven't done yet."]
+    [:ul
+     [:li]]
+    ;; View on web - Can this be a function / reusable component?
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
+                                       :target "_blank"}
+                                   "https://subcons.teod.eu/aspirational-todo/"]]]]]]
