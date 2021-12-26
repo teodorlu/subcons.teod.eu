@@ -37,7 +37,7 @@
         (println "Faied!")
         (clojure.stacktrace/print-stack-trace t)))))
 
-(defn watch-rebuild-edn!
+(defn watch!
   "Look for changes to EDN files; then try to rebuild."
   [_opts]
   (println "Watching and rebuilding index.edn files")
@@ -47,7 +47,7 @@
                  :handler #'watch-rebuild-edn-handler}]))
 
 (comment
-  (watch-rebuild-edn! {})
+  (watch! {})
 
   (-> ["teodor"]
       (with-meta  {:teod/id "teod"})
