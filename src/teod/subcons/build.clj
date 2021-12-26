@@ -2,7 +2,6 @@
   (:require [clojure.edn :as edn]
             [clojure.stacktrace]
             [teod.subcons.builder :as builder]
-            [teod.subcons.transform :as transform]
             [hawk.core :as hawk]))
 
 
@@ -29,9 +28,10 @@
     (try
       (let [edn-path (.getPath file)
             _ (print "building" edn-path "...")
-            edn (-> edn-path slurp edn/read-string
-                    (vary-meta assoc :teod.subcons/source-path edn-path)
-                    transform/transform)]
+            edn (-> edn-path
+                    slurp
+                    edn/read-string
+                    (vary-meta assoc :teod.subcons/source-path edn-path))]
         (builder/builder edn)
         (println " done."))
       (catch Throwable t
