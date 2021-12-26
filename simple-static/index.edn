@@ -1,4 +1,5 @@
-^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html
+  :eu.teod.subcons/transformers [eu.teod.subcons.sci/eval]}
 [:html
  [:head
   [:meta {:charset "utf-8"}]
@@ -15,6 +16,9 @@
     [:p "Just write HTML/EDN, abstract with SCI."]
     [:p "TODO - more content."]
     [:p "Wait, does this work? It does..."]
+    [:p "Observation: I don't like the terminology for build & builder."
+     " What's the difference? Should we just have subcons.teod.eu.build/watch?"]
+    [:p "I also want to try just evaluating with SCI. Opt-in via metadata?"]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/simple-static/"
                                        :target "_blank"}
