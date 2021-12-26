@@ -3,6 +3,10 @@
   (:require [hiccup.core]
             [clojure.string :as string]))
 
+;; 2021-12-26 - Hunch that this does not deserve its own namespace.
+;;
+;; Right now - there's a multimethod with a single implementation.
+
 (defmulti builder (fn [edn]
                     (-> edn meta :teod.subcons/builder)))
 
