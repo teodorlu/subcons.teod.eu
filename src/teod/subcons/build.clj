@@ -1,7 +1,7 @@
 (ns teod.subcons.build
   (:require [clojure.edn :as edn]
             [clojure.stacktrace]
-            [teod.subcons.builder :as builder]
+            [teod.subcons.filewriter :as writer]
             [hawk.core :as hawk]))
 
 (defn index-edn? [ctx {:keys [file] :as e}]
@@ -21,7 +21,7 @@
                     ;; We provide the source file path as metadata
                     ;; This allows the HTML writer to create a HTML file next to the EDN file
                     (vary-meta assoc :teod.subcons/source-path edn-path))]
-        (builder/builder edn)
+        (writer/write edn)
         (println " done."))
       (catch Throwable t
         (println "Faied!")
