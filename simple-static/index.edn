@@ -16,6 +16,6 @@
     [:p "TODO - more content."]
     [:p "Wait, does this work? It does..."]
     ;; View on web - Can this be a function / reusable component?
-    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
+    [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/simple-static/"
                                        :target "_blank"}
-                                   "https://subcons.teod.eu/aspirational-todo/"]]]]]]
+                                   "https://subcons.teod.eu/simple-static/"]]]]]]
