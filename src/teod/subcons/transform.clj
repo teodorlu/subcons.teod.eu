@@ -2,16 +2,13 @@
   (:require [clojure.walk]))
 
 ;; edn -> edn rewriting - Avoid tedious HTML, if required.
+;;
+;; 2021-12-26 evaluation - this is probably not useful, and surprising. Opt-in
+;; functionality is better than magic.
 
-;; A transform is a walk - regardless of what we believe.
-
-
-;; Suggestions on idiomatic solutions to "splice" into a vector when it's not
-;; macro-time?
-
-;; I'm trying to write a function that behaves like this:
-
-(defn dl [_ & args]
+(defn dl
+  "Abstraction for HTML definition lists - <dl></dl>"
+  [_ & args]
   (into [:dl]
         (mapcat (fn [[dt dd]]
                   (list
@@ -19,6 +16,7 @@
                    [:dd dd]))
                 (partition 2 args))))
 
+;;
 (defn transform [hiccup]
   (clojure.walk/postwalk (fn [form]
                            (cond (and (seqable? form)
