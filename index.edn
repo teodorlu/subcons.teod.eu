@@ -16,7 +16,7 @@
    [:p "A few pages:"]
    [:ul
     [:li [:a {:href "aspirational-todo/"} "Aspirational TODO"]]
-    [:li [:a {:href "simple-static/"} "A simple static site setup"]]
+    [:li [:a {:href "data-driven-site/"} "Data driven static sites"]]
     [:li [:a {:href "theory-meaning/"} "A theory of meaning"]]
     [:li [:a {:href "doomemacs-journey/"} "A Doom Emacs journey"]]
     [:li [:a {:href "sp3"} "sp3/"]]
