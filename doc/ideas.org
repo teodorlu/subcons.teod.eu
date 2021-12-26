@@ -33,6 +33,3 @@ return {"a": 1 / (1 + f) * 100,
 
 #+RESULTS:
 | 38.19709702062642 | 61.80290297937356 |
-** design?
-I feel like I'm approaching a place where I can /play/ with styles. Still don't
-feel like I'm /doing/ design.
