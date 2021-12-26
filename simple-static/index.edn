@@ -14,7 +14,7 @@
      "A simple static site setup"]
     [:p "Just write HTML/EDN, abstract with SCI."]
     [:p "TODO - more content."]
-    [:p "Wait, does this work? It does."]
+    [:p "Wait, does this work? It does..."]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
                                        :target "_blank"}
