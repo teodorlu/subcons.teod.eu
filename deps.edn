@@ -3,9 +3,6 @@
         hiccup/hiccup {:mvn/version "1.0.5"}
         hawk/hawk {:mvn/version "0.2.11"}}
  :aliases
- {:build {:ns-default teod.subcons.build
-          :exec-fn build-all
-          :exec-args {}}
-  :watch {:ns-default teod.subcons.build
+ {:watch {:ns-default teod.subcons.build
           :exec-fn watch-rebuild-edn!
           :exec-args {}}}}

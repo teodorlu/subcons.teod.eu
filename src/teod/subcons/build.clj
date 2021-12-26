@@ -5,37 +5,6 @@
             [teod.subcons.transform :as transform]
             [hawk.core :as hawk]))
 
-;; TODO This is painful to maintain.
-;;
-;; I'd prefer a regex matching index.edn files. But ... then I also need a list mechanism, and something else.
-;; But - I'm not using build. So perhaps just remove it?
-;;
-;; Decision - remove full build - just do incremental building.
-(defn edn-paths []
-  ["index.edn"
-   "aspirational-todo/index.edn"
-   "simple-static/index.edn"
-   "theory-meaning/index.edn"
-   "doomemacs-journey/index.edn"
-   "sp/index.edn"
-   "ast/index.edn"
-   "crazy-todo/index.edn"
-   "freedom-truth-fire/index.edn"])
-
-(defn build-all
-  "One-off - build EDN files."
-  [_opts]
-  (doseq [edn-path (edn-paths)]
-    (println "building" edn-path "...")
-    (try
-      (let [edn (-> edn-path slurp edn/read-string
-                    (vary-meta assoc :eu.teod.subcons/source-path edn-path))]
-        (builder/builder edn)
-        (println "Done."))
-      (catch Throwable t
-        (println "Faied!")
-        (clojure.stacktrace/print-stack-trace t)))
-    (println "All done.")))
 
 (defonce watcher (atom nil))
 
@@ -78,12 +47,6 @@
 
 (comment
   (watch-rebuild-edn! {})
-
-  (build-all {})
-
-  (meta
-   (-> (edn-paths)
-       first slurp edn/read-string))
 
   (-> ["teodor"]
       (with-meta  {:teod/id "teod"})
