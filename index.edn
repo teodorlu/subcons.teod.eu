@@ -1,4 +1,5 @@
-^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html}
+^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html
+  :teod.subcons/transformers [teod.subcons.sci/eval]}
 [:html {:class "no-js" :lang "en"}
  [:head
   [:meta {:charset "utf-8"}]
@@ -12,7 +13,7 @@
   [:section
    [:p [:em "Internet. The place of advice without context."]]
    [:p "AKA hyper-incremental idea factory — where message and medium becomes one."]
-   [:p "Some pages:"]
+   [:p "A few pages:"]
    [:ul
     [:li [:a {:href "aspirational-todo/"} "Aspirational TODO"]]
     [:li [:a {:href "simple-static/"} "A simple static site setup"]]
@@ -22,4 +23,7 @@
     [:li [:a {:href "sp4"} "sp4/"]]
     [:li [:a {:href "porta1"} "porta1"]]
     [:li [:a {:href "porta2"} "porta2"]]
-    [:li [:a {:href "bored/"} "bored"]]]]]]
+    [:li [:a {:href "bored/"} "bored"]]]
+   [:p "more pages:"]
+   [:p "1 + 2 is " (str (+ 1 2))]
+   [:ul ]]]]

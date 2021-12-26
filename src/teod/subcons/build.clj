@@ -2,7 +2,9 @@
   (:require [clojure.edn :as edn]
             [clojure.stacktrace]
             [teod.subcons.filewriter :as writer]
-            [hawk.core :as hawk]))
+            [hawk.core :as hawk]
+            [teod.subcons.info :as info]
+            [teod.subcons.transformers :as transformers]))
 
 (defn index-edn? [ctx {:keys [file] :as e}]
   (and (hawk/file? ctx e)
@@ -18,9 +20,8 @@
             edn (-> edn-path
                     slurp
                     edn/read-string
-                    ;; We provide the source file path as metadata
-                    ;; This allows the HTML writer to create a HTML file next to the EDN file
-                    (vary-meta assoc :teod.subcons/source-path edn-path))]
+                    (info/set-source-path edn-path)
+                    transformers/transform)]
         (writer/write edn)
         (println " done."))
       (catch Throwable t
