@@ -26,4 +26,5 @@
     [:li [:a {:href "bored/"} "bored"]]]
    [:p "more pages:"]
    [:p "1 + 2 is " (str (+ 1 2))]
-   [:ul ]]]]
+   [:ul (for [x (range 10)]
+          [:li "number " x])]]]]
