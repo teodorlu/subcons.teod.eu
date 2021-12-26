@@ -1,0 +1,11 @@
+#+TITLE: AESTHETIC
+
+No magic.
+
+Extremely loose coupling between pages.
+
+Easy to customize HTML and CSS directly.
+
+Abstraction is opt-in.
+
+We own the build system.
