@@ -1,4 +1,4 @@
-^{:teod.subcons/builder :teod.subcons.builder/hiccup-html
+^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html
   :teod.subcons/transformers [teod.subcons.sci/eval]}
 [:html
  [:head

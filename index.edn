@@ -1,9 +1,9 @@
-^{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
+^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html}
 [:html {:class "no-js" :lang "en"}
  [:head
   [:meta {:charset "utf-8"}]
   [:meta {:http-equiv "x-ua-compatible" :content "ie=edge"}]
-  [:title "·"]
+  [:title "aspirational hyper-incremental idea factory"]
   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
   [:link {:rel "stylesheet" :href "root.css"}]
   [:link {:rel "icon" :type "image/svg+xml" :href "/solarpunk1.svg"}]

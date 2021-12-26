@@ -1,4 +1,4 @@
-^{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
+^{:teod.subcons/filewriter :teod.subcons.builder/hiccup-html}
 [:html
  [:head
   [:meta {:charset "utf-8"}]
