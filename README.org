@@ -1,19 +1,22 @@
 #+TITLE: Readme
 
-You might want to edit EDN files and see how that looks. If so, run
+* Local development
+Requirements:
+
+- Clojure. Static site generation system.
+- Nodejs. Only for =live-server= - which is used for local development
+
+To work on EDN files producing HTML, simply
 
 #+begin_src
+bin/watch &
 bin/live-server
 #+end_src
 
-and
-
-#+begin_src
-bin/watch
-#+end_src
-
-. That should start a web browser for you.
-
+. We keep HTML version controlled, so when you've made changes, simply check in
+the changed HTML and push. There is no remote builder -- this folder is simply
+served as-is.
+* How to view live server output on a mobile device
 You can view the live server directly on a mobile device, just find the local
 network IP of the computer you're using.
 
