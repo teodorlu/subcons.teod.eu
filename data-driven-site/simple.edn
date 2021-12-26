@@ -1,0 +1,7 @@
+^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html
+  :teod.subcons/transformers [teod.subcons.sci/eval]}
+(let [title "A data-driven approach to static sites"]
+  [:html [:head [:title title]
+          [:body [:main [:section
+                         [:h1 {:style "color: #252525"} title]
+                         [:p "Hello, world! 1+1 is " (+ 1 1) "!"]]]]]])

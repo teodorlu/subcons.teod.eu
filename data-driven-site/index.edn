@@ -49,7 +49,7 @@
        " Sure! I'm thinking of providing a " [:em ":teod.subcons/transformers"] "-transformer with functions for loading"
        " markdown or org-mode files. Then I can keep control of each page, and embed content where I want."]
 
-      [:p [:em "Sounds interesting?"] " Just steal this code and try. Or just write your own static site mechanisms, it's quite fun."]
+      [:p [:em "Sounds interesting?"] " Just steal this code and try. Or write your own static site mechanisms, it's quite fun."]
 
       [:p [:strong "Future work."] " Error handling is ... not. Don't make your transformer chain too long."
        " Also, I'd like to experiment with \"embedding\" other kinds of content. Markdown, Org-mode, Vega JSON, etc."]

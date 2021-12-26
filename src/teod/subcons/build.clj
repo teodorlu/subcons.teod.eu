@@ -8,7 +8,7 @@
 
 (defn index-edn? [ctx {:keys [file] :as e}]
   (and (hawk/file? ctx e)
-       (= "index.edn"
+       (#{"index.edn" "simple.edn"}
           (.getName file))))
 
 (defn watch-rebuild-edn-handler
