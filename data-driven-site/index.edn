@@ -40,7 +40,8 @@
        " Finally, an " [:a {:href github-html} "HTML file"] " is produced."]
 
       [:p "I didn't like that my old site isolated me from HTML and CSS. That's the worst way to learn."
-       " Writing HTML/CSS first - then " [:em "opting"] " into more structure when required is an alternative."]
+       " Writing HTML/CSS first - then " [:em "opting"] " into more structure when required is an alternative."
+       " Bonus - deploy times are really fast when Netlify's build is a pure file copy operation."]
 
       [:p [:em "But .. writing in Markdown or Org-mode is kind of nice."]
        " Sure! I'm thinking of providing a " [:em ":teod.subcons/transformers"] "-transformer with functions for loading"
