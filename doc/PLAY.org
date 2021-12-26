@@ -1,0 +1,4 @@
+#+TITLE: PLAY
+
+We want to encourage PLAY with FORM and CONTENT. How low can we go? (Thanks Kent
+Beck and Oddmund Strømme).
