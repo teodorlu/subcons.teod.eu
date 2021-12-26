@@ -5,9 +5,16 @@
             [teod.subcons.transform :as transform]
             [hawk.core :as hawk]))
 
+;; TODO This is painful to maintain.
+;;
+;; I'd prefer a regex matching index.edn files. But ... then I also need a list mechanism, and something else.
+;; But - I'm not using build. So perhaps just remove it?
+;;
+;; Decision - remove full build - just do incremental building.
 (defn edn-paths []
   ["index.edn"
    "aspirational-todo/index.edn"
+   "simple-static/index.edn"
    "theory-meaning/index.edn"
    "doomemacs-journey/index.edn"
    "sp/index.edn"
@@ -29,8 +36,6 @@
         (println "Faied!")
         (clojure.stacktrace/print-stack-trace t)))
     (println "All done.")))
-
-
 
 (defonce watcher (atom nil))
 
