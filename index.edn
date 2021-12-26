@@ -11,6 +11,7 @@
  [:body
   [:section
    [:p [:em "Internet. The place of advice without context."] " (Please tell me I'm wrong)."]
+   [:p "AKA hyper-incremental idea factory — where message and medium becomes one."]
    [:p "Places not of reason include:"]
    [:ul
     [:li [:a {:href "aspirational-todo/"} "Aspirational TODO"]]
