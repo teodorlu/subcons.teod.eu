@@ -41,6 +41,17 @@
       " For plain data, I could use pandoc to transform to JSON."
       " If not plain data - then what? I want to loose document coupling."]
      ]
+    [:details [:summary "Remove `npx live-server` in favor of @borkdude browser scripting"]
+     [:p "Source: " [:a {:href "https://clojurians.slack.com/archives/C03RZGPG3/p1640532591197000"}
+                     "@borkdude on Slack"] "."]
+     [:p "Borkdude links to "
+      [:a {:href "https://github.com/babashka/book/blob/master/script/watch.clj"}
+       "book/watch.clj"]
+      " and "
+      [:a {:href "https://github.com/babashka/babashka/blob/master/examples/http-server.clj"}
+       "babashka/examples/http-server"]
+      "."]
+     ]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
                                        :target "_blank"}
