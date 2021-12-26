@@ -5,7 +5,7 @@
   (:require [hiccup2.core]
             [clojure.string :as str]))
 
-;; Note - builder is a bad word. To wide.
+;;; builder is a bad word. To wide. Can we do better?
 ;;
 ;; There are different kinds of things:
 ;;
