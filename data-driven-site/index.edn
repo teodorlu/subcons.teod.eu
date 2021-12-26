@@ -1,7 +1,14 @@
 ^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html
   :teod.subcons/transformers [teod.subcons.sci/eval]}
 (let [hakyll "https://jaspervdj.be/hakyll/"
-      kentbeck-tcr "https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864"]
+      kentbeck-tcr "https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864"
+      oddmunds-twitter "https://twitter.com/jraregris"
+      jackrusher-twitter "https://twitter.com/jackrusher"
+      magnars-twitter "https://twitter.com/magnars/"
+      edn-github "https://github.com/teodorlu/subcons.teod.eu/blob/d00584b6fa4c1f2191cc409bd64b4243725860f5/data-driven-site/index.edn"
+      build-github ""
+      html-github ""
+      ]
   [:html
    [:head
     [:meta {:charset "utf-8"}]
@@ -23,16 +30,26 @@
        " I've seriously enjoyed playing with " [:a {:href kentbeck-tcr} "TCR"] "."
        " Technically, TCR nudges you to minimize the time from having your code in one working state, to having your code in"
        " another working state."
-       " I wanted something similar, but with the flexibility of playing around with raw HTML, and raw CSS."]
-      [:p [:em "How does it work?"] " I write straignt into an " [:a "EDN file"] "."
+       " I wanted something similar, but with the flexibility of playing around with raw HTML, and raw CSS."
+       " Also, I wanted something that's really simple to " [:em "escape"] " from. Take the repo, delete everything not HTML and CSS"
+       ", and you have an archive. Built to last."]
+
+      [:p [:em "Tell me, how does it work?"] " I write straight into an " [:a "EDN file"] "."
        " If anyone wants to learn structural editing, writing a blog post in EDN is great exercise."
        " Then the " [:a "build system"] " picks up the data, dispatching based on metadata in the EDN file."
        " Finally, an " [:a "HTML file"] " is produced."
        ]
+      [:p [:em "But .. writing in Markdown or Org-mode is kind of nice."]
+       " Sure! I'm thinking of providing a " [:em ":teod.subcons/transformers"] "-transformer with functions for loading"
+       " markdown or org-mode files. Then I can keep control of each page, and embed content where I want."
+       " Sounds interesting? Just steal this code and try. I'm afraid this mess of ideas is not suitable for collaboration."]
 
+      [:p [:em "Should I use this?"] " If you want to download something that works, this is not for you."
+       " If you want to experiment with your "]
 
       ;; View on web - Can this be a function / reusable component?
-      [:p "Nods of appreciation for inspiration to Magnar Sveen, Jack Rusher (simple Clojure HTML approaches), Oddmund Strømme (TCR & discussions)."]
+      [:p "Nods thanks go to " "Magnar Sveen" ", " "Jack Rusher" " for simple approaches to HTML with Clojure"
+       ", and to " "Oddmund Strømme" " for discissions related to TCR and other things."]
       [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/simple-static/"
                                          :target "_blank"}
                                      "https://subcons.teod.eu/simple-static/"]]]]]])
