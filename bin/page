@@ -10,7 +10,7 @@ if test -f "$FOLDER/index.edn"; then
 else
     # Create it.
     cat <<EOF > "$FOLDER/index.edn"
-^{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+^{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
 [:html
  [:head
   [:meta {:charset "utf-8"}]

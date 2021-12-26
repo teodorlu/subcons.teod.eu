@@ -4,10 +4,10 @@
             [clojure.string :as string]))
 
 (defmulti builder (fn [edn]
-                    (-> edn meta :eu.teod.subcons/builder)))
+                    (-> edn meta :teod.subcons/builder)))
 
-(defmethod builder :eu.teod.subcons.builder/hiccup-html [edn]
-  (let [edn-path (-> edn meta :eu.teod.subcons/source-path)
+(defmethod builder :teod.subcons.builder/hiccup-html [edn]
+  (let [edn-path (-> edn meta :teod.subcons/source-path)
         html (hiccup.core/html edn)
         html-path (string/replace edn-path #"\.edn$" ".html")]
     (assert (not= edn-path html-path) "Conflict: same input and output path.")
@@ -17,7 +17,7 @@
                html))))
 
 (defmethod builder :default [edn]
-  (println "no builder registered for" (-> edn meta :eu.teod.subcons/builder)))
+  (println "no builder registered for" (-> edn meta :teod.subcons/builder)))
 
 (comment
   ;; multimethods can be a hassle in the REPL - just onload the whole ns.

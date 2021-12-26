@@ -83,6 +83,6 @@ Ideas:
 NOW: can an EDN file have metadata? That would be nice.
 
 #+begin_src clojure
-{:eu.teod.subcons/builder :eu.teod.subcons.builder/hiccup-html}
+{:teod.subcons/builder :teod.subcons.builder/hiccup-html}
 #+end_src
 
