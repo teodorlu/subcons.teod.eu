@@ -37,8 +37,11 @@
       [:p [:em "Tell me, how does it work?"] " I write straight into an " [:a {:href github-edn} "EDN file"] "."
        " If anyone wants to learn structural editing, writing a blog post in EDN is great exercise."
        " Then the " [:a {:href github-build} "build system"] " picks up the data, dispatching based on metadata in the EDN file."
-       " Finally, an " [:a {:href github-html} "HTML file"] " is produced."
-       ]
+       " Finally, an " [:a {:href github-html} "HTML file"] " is produced."]
+
+      [:p "I didn't like that my old site isolated me from HTML and CSS. That's the worst way to learn."
+       " Writing HTML/CSS first - then " [:em "opting"] " into more structure when required is an alternative."]
+
       [:p [:em "But .. writing in Markdown or Org-mode is kind of nice."]
        " Sure! I'm thinking of providing a " [:em ":teod.subcons/transformers"] "-transformer with functions for loading"
        " markdown or org-mode files. Then I can keep control of each page, and embed content where I want."]
