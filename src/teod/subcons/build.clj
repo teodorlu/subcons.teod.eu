@@ -4,17 +4,6 @@
             [teod.subcons.builder :as builder]
             [hawk.core :as hawk]))
 
-(defonce watcher (atom nil))
-
-(defn watch-rebuild-edn-stop!
-  "Stop all watchers."
-  []
-  (swap! watcher
-         (fn [w]
-           (when w
-             (hawk/stop! w))
-           nil)))
-
 (defn index-edn? [ctx {:keys [file] :as e}]
   (and (hawk/file? ctx e)
        (= "index.edn"
@@ -41,16 +30,6 @@
   "Look for changes to EDN files; then try to rebuild."
   [_opts]
   (println "Watching and rebuilding index.edn files")
-  (watch-rebuild-edn-stop!)
   (hawk/watch! [{:paths ["."]
                  :filter #'index-edn?
                  :handler #'watch-rebuild-edn-handler}]))
-
-(comment
-  (watch! {})
-
-  (-> ["teodor"]
-      (with-meta  {:teod/id "teod"})
-      (vary-meta assoc :teod/count 99)
-      meta)
-  )
