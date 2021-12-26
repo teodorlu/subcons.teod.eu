@@ -52,7 +52,7 @@
       ;; View on web - Can this be a function / reusable component?
       [:p "Nods thanks go to " [:a {:href twitter-magnars} "Magnar Sveen"] ", " [:a {:href twitter-jackrusher} "Jack Rusher"] " for simple approaches to HTML with Clojure"
        ", and to " [:a {:href twitter-oddmunds} "Oddmund Strømme"] " for discissions related to TCR and other things."]
-      [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/simple-static/"
+      [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/data-driven-site/"
                                          :target "_blank"}
-                                     "https://subcons.teod.eu/simple-static/"]
+                                     "https://subcons.teod.eu/data-driven-site/"]
        #_ "(repeating this over and over is boring, perhaps I can make something reusable)"]]]]])
