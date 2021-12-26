@@ -41,13 +41,9 @@
        ]
       [:p [:em "But .. writing in Markdown or Org-mode is kind of nice."]
        " Sure! I'm thinking of providing a " [:em ":teod.subcons/transformers"] "-transformer with functions for loading"
-       " markdown or org-mode files. Then I can keep control of each page, and embed content where I want."
-       " Sounds interesting? Just steal this code and try. I'm afraid this mess of ideas is not suitable for collaboration."
-       " Also, error handling sucks right now. On the bright side, you're only working on a " [:em "single"] " document at"
-       " a time, so if you keep your EDN to a page height you can possibly eyeball your error."]
+       " markdown or org-mode files. Then I can keep control of each page, and embed content where I want."]
 
-      [:p [:em "Should I use this?"] " If you want to download something that works, this is not for you."
-       " If you want to experiment with your "]
+      [:p [:em "Sounds interesting?"] " Just steal this code and try. Or just write your own static site mechanisms, it's quite fun."]
 
       ;; View on web - Can this be a function / reusable component?
       [:p "Nods thanks go to " [:a {:href twitter-magnars} "Magnar Sveen"] ", " [:a {:href twitter-jackrusher} "Jack Rusher"] " for simple approaches to HTML with Clojure"
