@@ -49,6 +49,9 @@
 
       [:p [:em "Sounds interesting?"] " Just steal this code and try. Or just write your own static site mechanisms, it's quite fun."]
 
+      [:p [:strong "Future work."] " Error handling is ... not. Don't make your transformer chain too long."
+       " Also, I'd like to experiment with \"embedding\" other kinds of content. Markdown, Org-mode, Vega JSON, etc."]
+
       ;; View on web - Can this be a function / reusable component?
       [:p "Nods thanks go to " [:a {:href twitter-magnars} "Magnar Sveen"] ", " [:a {:href twitter-jackrusher} "Jack Rusher"] " for simple approaches to HTML with Clojure"
        ", and to " [:a {:href twitter-oddmunds} "Oddmund Strømme"] " for discissions related to TCR and other things."]
