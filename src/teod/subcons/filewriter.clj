@@ -2,14 +2,14 @@
   "A builder takes EDN and produces an output file.
 
   An EDN source files pick its writer with metadata."
-  (:require [hiccup2.core]
+  (:require [teod.subcons.info :as info]
+            [hiccup2.core]
             [clojure.string :as str]))
 
-(defmulti write (fn [edn]
-                    (-> edn meta :teod.subcons/filewriter)))
+(defmulti write #'info/filewriter)
 
 (defmethod write :teod.subcons.filewriter/hiccup-html [edn]
-  (let [edn-path (-> edn meta :teod.subcons/source-path)
+  (let [edn-path (info/source-path edn)
         html (hiccup2.core/html edn)
         html-path (str/replace edn-path #"\.edn$" ".html")]
     (assert (not= edn-path html-path) "Conflict: same input and output path.")
@@ -19,7 +19,7 @@
                html))))
 
 (defmethod write :default [edn]
-  (println "no builder registered for" (-> edn meta :teod.subcons/builder))
+  (println "no builder registered for" (info/filewriter edn))
   (println " => no action taken."))
 
 (comment

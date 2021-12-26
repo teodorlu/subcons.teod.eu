@@ -1,10 +1,10 @@
 (ns teod.subcons.transformers
   (:refer-clojure :exclude [eval])
-  (:require [teod.subcons.sci]))
+  (:require [teod.subcons.sci]
+            [teod.subcons.info :as info]))
 
 (defn transform [edn]
-    (let [transformers (:teod.subcons/transformers (meta edn)
-                                                    [])
+    (let [transformers (info/transformers edn)
           edn-nometa (with-meta edn {})]
       (reduce (fn [val trans]
                 (if-let [f (requiring-resolve trans)]
