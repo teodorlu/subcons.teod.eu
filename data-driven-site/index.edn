@@ -5,9 +5,9 @@
       twitter-oddmunds "https://twitter.com/jraregris"
       twitter-jackrusher "https://twitter.com/jackrusher"
       twitter-magnars "https://twitter.com/magnars/"
-      github-edn "https://github.com/teodorlu/subcons.teod.eu/blob/d00584b6fa4c1f2191cc409bd64b4243725860f5/data-driven-site/index.edn"
-      github-build "https://github.com/teodorlu/subcons.teod.eu/blob/9415c8ead50d4cd14f32ad077ddd5c3f97b9fdc1/src/teod/subcons/build.clj"
-      github-html "https://github.com/teodorlu/subcons.teod.eu/blob/d00584b6fa4c1f2191cc409bd64b4243725860f5/data-driven-site/index.html"
+      github-edn "https://github.com/teodorlu/subcons.teod.eu/blob/master/data-driven-site/index.edn"
+      github-build "https://github.com/teodorlu/subcons.teod.eu/blob/master/src/teod/subcons/build.clj"
+      github-html "https://github.com/teodorlu/subcons.teod.eu/blob/master/data-driven-site/index.html"
       ]
   [:html
    [:head
