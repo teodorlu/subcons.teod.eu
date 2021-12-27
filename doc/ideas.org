@@ -40,3 +40,5 @@ Programming is:
 Idea: provide interface to Pandoc as a Sci function.
 * using portal
 Idea: tap> errors to portal, explore from there.
+* idea: automatically link to source on Github - as a component
+* idea: automatically link to page for published article
