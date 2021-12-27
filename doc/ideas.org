@@ -30,3 +30,9 @@ return {"a": 1 / (1 + f) * 100,
 
 #+RESULTS:
 | 38.19709702062642 | 61.80290297937356 |
+* Programming is
+Programming is:
+
+1. A set of small mechanisms that do things
+2. A language to speak about those mechanisms
+3. And an incremental approach to building mechanisms and language.
