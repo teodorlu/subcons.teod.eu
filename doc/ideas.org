@@ -36,3 +36,7 @@ Programming is:
 1. A set of small mechanisms that do things
 2. A language to speak about those mechanisms
 3. And an incremental approach to building mechanisms and language.
+* embedding org-mode
+Idea: provide interface to Pandoc as a Sci function.
+* using portal
+Idea: tap> errors to portal, explore from there.
