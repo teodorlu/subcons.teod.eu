@@ -24,6 +24,7 @@
     [:li [:a {:href "porta1"} "porta1"]]
     [:li [:a {:href "porta2"} "porta2"]]
     [:li [:a {:href "bored/"} "bored"]]]
+   [:p "Sci is nice. Embedded calculations is kinda cool."]
    [:pre [:code "1 + 2 is " (str (+ 1 2))]]
    [:ul (for [x (range 3)]
           [:li "number " x])]]]]
