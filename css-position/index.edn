@@ -11,6 +11,6 @@
   [:p "Possible position values:"
    " static, relative, absolute, fixed, sticky, inherit, initial, revert, unset"]
   [:dl
-   [:dd "Static"]   [:dt "Normal document flow."]
-   [:dd "Relative"] [:dt "??"]
-   [:dd "Absolute"] [:dt "??"]]]]
+   [:dt "Static"]   [:dd "Normal document flow."]
+   [:dt "Relative"] [:dd "??"]
+   [:dt "Absolute"] [:dd "??"]]]]
