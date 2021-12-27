@@ -68,3 +68,18 @@ body > section:nth-child(2) h2,h3 {
 .sig {
     color: #ffb703;
 }
+
+
+/* ---------------------------------------------------------------------------
+                                 TYPE
+   ---------------------------------------------------------------------------
+ */
+
+section > details {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+section > details > p {
+    margin-left: 14px;
+}
