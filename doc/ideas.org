@@ -58,3 +58,5 @@ Steps: host XTDB instance (server) on db.teod.eu via Iterapp. But ... how to
 make the connection nice?
 *** Can I have the whole thing public?
 db.teod.eu - be internet-wide readable?
+
+Tentatively - that makes a /lot/ of sense.
