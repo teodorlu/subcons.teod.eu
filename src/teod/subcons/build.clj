@@ -1,10 +1,11 @@
 (ns teod.subcons.build
-  (:require [clojure.edn :as edn]
-            [clojure.stacktrace]
-            [teod.subcons.filewriter :as writer]
-            [hawk.core :as hawk]
-            [teod.subcons.info :as info]
-            [teod.subcons.transformers :as transformers]))
+  (:require
+   [clojure.edn :as edn]
+   [clojure.stacktrace]
+   [hawk.core :as hawk]
+   [teod.subcons.filewriter :as writer]
+   [teod.subcons.info :as info]
+   [teod.subcons.transformers :as transformers]))
 
 (defn index-edn? [ctx {:keys [file] :as e}]
   (and (hawk/file? ctx e)
