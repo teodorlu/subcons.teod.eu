@@ -61,19 +61,6 @@ body {
 
 body > main {
     background-color: #77f87a;
-    color: #1f5768;
+    color: var(--teod-teal);
     flex: 1;
-}
-
-body > section:nth-child(2) {
-    background-color: #1f5768;
-    color: #77f87a;
-}
-
-body > section:nth-child(2) h2,h3 {
-    color: yellow;
-}
-
-.sig {
-    color: #ffb703;
 }
