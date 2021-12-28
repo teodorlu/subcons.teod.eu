@@ -42,3 +42,19 @@ Idea: provide interface to Pandoc as a Sci function.
 Idea: tap> errors to portal, explore from there.
 * idea: automatically link to source on Github - as a component
 * idea: automatically link to page for published article
+* idea: personal knowledge model straight in XTDB
+** Contains a context sensitive bookmark database - where I can structure links in a system
+** Contains all my podcasts
+** Contains ... more?
+** Q: What's the difference between that database and Roam?
+*** A: The database has more structure, Roam has less structure.
+*** A: Roam is nice for person-editable content, db is nice for machine-editable content
+*** Idea: I can do bidirectional linking
+Roam -> XTDB: teod.db/crux-id
+
+XTDB -> Roam: teod.roam/roam-id
+
+Steps: host XTDB instance (server) on db.teod.eu via Iterapp. But ... how to
+make the connection nice?
+*** Can I have the whole thing public?
+db.teod.eu - be internet-wide readable?
