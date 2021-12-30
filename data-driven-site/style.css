@@ -42,6 +42,12 @@ body > * > section {
     margin-right: auto;
 }
 
+body > main {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 4vw;
+}
+
 /* ---------------------------------------------------------------------------
                                  GRAPHIC STYLE
  */
