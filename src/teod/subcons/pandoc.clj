@@ -1,36 +1,31 @@
 (ns teod.subcons.pandoc
-  (:require [clojure.java.shell :refer [with-sh-dir sh]]))
-
-(with-sh-dir "doc"
-  (sh "ls"))
-
-(with-sh-dir "doc"
-  (sh "pandoc" "-h"))
+  (:require [clojure.java.shell :refer [with-sh-dir sh]]
+            [clojure.data.json :as json]))
 
 (defn -parse [{:keys [source format]}]
   (assert source)
   (assert format)
   (assert (#{"markdown"} format)) ; whitelist - avoid errors
-  (sh "pandoc" "-s" "-f" format "-t" "json" :in source))
+  (-> (sh "pandoc" "-s" "-f" format "-t" "json" :in source)
+      :out
+      json/read-str
+      (get "blocks")))
 
-(-parse {:source "# okay\n\n- are you okay?\n- sure?"
+;; At some point, the output of -parse needs to become hiccup.
+
+(-parse {:source "# okay
+
+- are you okay?
+- sure?"
          :format "markdown"})
-
-(sh "pandoc" "-s" "-f" "markdown" "-t" "json"
-    :in "# hello
-
-- Are you okay?")
-
-(defn parse-org
-  ""
-  [])
-
-(defn parse-md [])
-
-(comment
-  ;; draft
-
-  ;; something that matches Pandoc's CLI
-  ;;
-  ;; perhaps I should start out exploring it myself ...
-  )
+;; => [{"t" "Header", "c" [1 ["okay" [] []] [{"t" "Str", "c" "okay"}]]}
+;;     {"t" "BulletList",
+;;      "c"
+;;      [[{"t" "Plain",
+;;         "c"
+;;         [{"t" "Str", "c" "are"}
+;;          {"t" "Space"}
+;;          {"t" "Str", "c" "you"}
+;;          {"t" "Space"}
+;;          {"t" "Str", "c" "okay?"}]}]
+;;       [{"t" "Plain", "c" [{"t" "Str", "c" "sure?"}]}]]}]
