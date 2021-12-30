@@ -1,0 +1,18 @@
+#+TITLE: Pandoc
+
+Intent: explore Pandoc's CLI so that I can build a thin wrapper.
+
+We prefer to shell out to pandoc to avoid having to compile in some pandoc
+dependencies. We could look for a pandoc lib, but I'd rather just do it myself
+:)
+
+#+begin_src bash
+pandoc
+
+#+end_src
+
+#+RESULTS:
+| AESTHETIC.org |
+| ideas.org     |
+| pandoc.org    |
+| PLAY.org      |
