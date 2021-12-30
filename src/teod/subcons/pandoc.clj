@@ -1,6 +1,7 @@
 (ns teod.subcons.pandoc
-  (:require [clojure.java.shell :refer [with-sh-dir sh]]
-            [clojure.data.json :as json]))
+  (:require
+   [clojure.data.json :as json]
+   [clojure.java.shell :refer [sh]]))
 
 (defn -parse [{:keys [source format]}]
   (assert source)
