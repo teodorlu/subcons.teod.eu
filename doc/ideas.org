@@ -60,3 +60,8 @@ make the connection nice?
 db.teod.eu - be internet-wide readable?
 
 Tentatively - that makes a /lot/ of sense.
+* idea: preloaded sci env for pages
+** Use case: provide stuff like "view page on web" as a component
+** Use case: provide current file path as a component
+or dynamic var?
+** Should the sci env set its default directory?
