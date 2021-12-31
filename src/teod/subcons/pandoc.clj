@@ -7,7 +7,7 @@
   (assert source)
   (assert format)
   (assert (#{"markdown"} format)) ; whitelist - avoid errors
-  (-> (sh "pandoc" "-s" "-f" format "-t" "json" :in source)
+  (-> (sh "pandoc" "-f" format "-t" "json" :in source)
       :out
       (json/read-str :key-fn keyword)
       :blocks))
