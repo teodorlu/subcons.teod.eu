@@ -65,3 +65,9 @@ Tentatively - that makes a /lot/ of sense.
 ** Use case: provide current file path as a component
 or dynamic var?
 ** Should the sci env set its default directory?
+* Understand borkdude's setup
+His blog: https://github.com/borkdude/blog
+
+Via Slack: https://clojurians.slack.com/archives/CLX41ASCS/p1640626516044200
+
+New work - via Slack: https://github.com/borkdude/blog/commit/131663d19963dc601195e10ca0c62f5de03bee3e
