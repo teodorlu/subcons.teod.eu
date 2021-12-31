@@ -51,3 +51,23 @@
 ;;          {:t "Space"}
 ;;          {:t "Str", :c "okay?"}]}]
 ;;       [{:t "Plain", :c [{:t "Str", :c "sure?"}]}]]}]
+
+(defn org-> [source]
+  (-parse {:source source
+           :format "org"}))
+
+(defn markdown-> [source]
+  (-parse {:source source
+           :format "markdown"}))
+
+(comment
+  (assert (= (org-> "* head
+** subhead
+Hello!")
+  (markdown-> "# head
+## subhead
+Hello!")))
+
+
+
+  )
