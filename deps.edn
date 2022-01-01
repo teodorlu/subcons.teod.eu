@@ -4,4 +4,5 @@
         hawk/hawk {:mvn/version "0.2.11"}
         org.babashka/sci {:mvn/version "0.2.8"}
         org.clojure/data.json {:mvn/version "2.4.0"}
+        djblue/portal {:mvn/version "0.19.2"}
         }}

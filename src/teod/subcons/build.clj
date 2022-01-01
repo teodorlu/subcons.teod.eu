@@ -33,7 +33,9 @@
 (defn watch!
   "Look for changes to EDN files; then try to rebuild.
 
-  Called directly from build system."
+  Called directly from build system.
+
+  Accepts emtpy map to conform to clojure -X conventions."
   [_opts]
   (println "Watching and rebuilding index.edn files")
   (hawk/watch! [{:paths ["."]
