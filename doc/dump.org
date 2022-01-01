@@ -1,0 +1,9 @@
+#+TITLE: Incremental dump
+
+* 2022-01-01
+Situational awareness:
+
+1. I want to log parse errors with portal
+2. That requires me to be in the same process as my portal instance
+3. Which requires me to launch watch from a REPL process - not externally via
+   babashka.
