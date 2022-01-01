@@ -20,7 +20,8 @@
    [:body
     [:main
      [:section
-      [:p [:a {:href ".."} ".."]]
+      [:p (teod/link "..") #_ "Is this an improvement? Not sure."
+       #_#_ "Optionally - just" [:p [:a {:href ".."} ".."]]]
       [:h1 {:style "color: #252525"}
        title]
       [:p "My " [:a {:href teodorheggelund-com} "old static site"]
