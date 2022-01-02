@@ -8,10 +8,9 @@
 
 (defun subcons/dev ()
   "Is this doc?"
-  (async-shell-command "bin/live-server" "*subcons/live-server*")
-  (async-shell-command "bin/watch" "*subcons/watch*"))
+  (async-shell-command "bb serve" "*subcons/live-server*"))
 
-(subcons/dev)
+;; (subcons/dev)
 
 (provide 'exec)
 ;;; exec.el ends here
