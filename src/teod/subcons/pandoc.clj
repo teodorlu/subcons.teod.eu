@@ -82,18 +82,22 @@
                         )
                       )
                     data)))
-  ;; cheats
+
+
+
+
+  )
+
+
+(comment
+  ;; A pandoc header looks like this:
   {:t "Header", :c [1 ["header" [] []] ["header"]]}
 
   (-> "* header\nBody goes here"
       org->
       ->hiccup)
 
-  )
-
-(org-> "* head /more/")
-
-(comment
+  (org-> "* head /more/")
   (-> "- item 1\n- item 2"
       org->
       ->hiccup)
