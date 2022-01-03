@@ -74,9 +74,7 @@
                                  (into [:li] li)))
 
                         (header? el)
-                        (let [level (get-in el [:c 0])
-                              _attrs (get-in el [:c 1])
-                              content (get-in el [:c 2])]
+                        (let [[level _attrs content] (:c el)]
                           (into [(keyword (str "h" level))]
                                 content))
 
