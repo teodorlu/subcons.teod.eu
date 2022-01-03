@@ -1,7 +1,8 @@
 (ns teod.subcons.pandoc
   (:require
    [clojure.data.json :as json]
-   [clojure.java.shell :refer [sh]]))
+   [clojure.java.shell :refer [sh]]
+   [clojure.walk :refer [postwalk]]))
 
 (defn -parse [{:keys [source format]}]
   (assert source)
@@ -22,6 +23,7 @@
 ;; dispatching on :t might work.
 
 
+
 (defn org-> [source]
   (-parse {:source source
            :format "org"}))
@@ -29,6 +31,58 @@
 (defn markdown-> [source]
   (-parse {:source source
            :format "markdown"}))
+
+(org-> "some text")
+
+(do
+  (defn ->hiccup [data]
+    (into [:div]
+          (postwalk (fn [el]
+                      (cond
+                        (= "Header" (:t el))
+                        el
+
+                        (= "Str" (:t el))
+                        (:c el)
+
+                        (= "Space" (:t el))
+                        " "
+
+                        (= "Para" (:t el))
+                        (into [:p (:c el)])
+
+                        :else el
+                        )
+                      )
+                    data)))
+
+  (-> "some text"
+      org->
+      ->hiccup)
+  )
+
+(comment
+
+  (org-> "* my header")
+  ;; => [{:t "Header",
+  ;;      :c
+  ;;      [1
+  ;;       ["my-header" [] []]
+  ;;       [{:t "Str", :c "my"} {:t "Space"} {:t "Str", :c "header"}]]}]
+
+  (org-> "** my header")
+  ;; => [{:t "Header",
+  ;;      :c
+  ;;      [2
+  ;;       ["my-header" [] []]
+  ;;       [{:t "Str", :c "my"} {:t "Space"} {:t "Str", :c "header"}]]}]
+  (org-> "*** my header")
+  ;; => [{:t "Header",
+  ;;      :c
+  ;;      [3
+  ;;       ["my-header" [] []]
+  ;;       [{:t "Str", :c "my"} {:t "Space"} {:t "Str", :c "header"}]]}]
+  )
 
 (comment
   (assert (= (org-> "* head
