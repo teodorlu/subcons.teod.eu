@@ -1,5 +1,8 @@
 #+TITLE: Balancing outcome orientation and bottom-up play
 
+# Idea - when parsing this, I can use a pandoc reader to extract the document
+# title, then just put the plaintext into the hiccup parser too.
+
 * Outcome orientation distributes intent to teams
 * Overblown outcome orientation is micromanagement
 * Distributed intent requires both outcome orientation and ownership from others
