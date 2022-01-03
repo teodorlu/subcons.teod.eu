@@ -55,11 +55,28 @@
                                  (str/join "" (:c el))
                                  (:c el))])
 
+                        (= "Plain" (:t el))
+                        (into [:span
+                               (if (every? str (:c el))
+                                 (str/join "" (:c el))
+                                 (:c el))])
+
+                        (= "BulletList" (:t el))
+                        (into [:ul]
+                              (for [li (:c el)]
+                                 (into [:li li])))
+
+                        ;; todo - return nil (aka ignore) when we go into production
                         :else el
                         )
                       )
                     data)))
+  (-> "- item 1\n- item 2"
+      org->
+      ->hiccup)
 
+
+  #_
   (-> "some text"
       org->
       ->hiccup)
