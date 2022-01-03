@@ -30,8 +30,7 @@
    (let [showoff (fn [form]
                    [:pre [:code (str form)
                           " is "
-                          (str (eval form))
-                          ]])]
+                          (str (eval form))]])]
      (showoff (quote (* 9 9)))
      (showoff (quote (range 12))))
    [:ul (for [x (range 3)]
