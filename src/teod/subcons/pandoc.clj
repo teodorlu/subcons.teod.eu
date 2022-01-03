@@ -2,7 +2,8 @@
   (:require
    [clojure.data.json :as json]
    [clojure.java.shell :refer [sh]]
-   [clojure.walk :refer [postwalk]]))
+   [clojure.walk :refer [postwalk]]
+   [clojure.string :as str]))
 
 (defn -parse [{:keys [source format]}]
   (assert source)
@@ -49,7 +50,10 @@
                         " "
 
                         (= "Para" (:t el))
-                        (into [:p (:c el)])
+                        (into [:p
+                               (if (every? str (:c el))
+                                 (str/join "" (:c el))
+                                 (:c el))])
 
                         :else el
                         )
