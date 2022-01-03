@@ -31,7 +31,9 @@
                    [:pre [:code (str form)
                           " is "
                           (str (eval form))]])]
-     (showoff (quote (* 9 9)))
-     (showoff (quote (range 12))))
+     [:div
+      (showoff (quote (* 9 9)))
+      (showoff (quote (range 12)))])
+   [:p "Or produce some HTML:"]
    [:ul (for [x (range 3)]
           [:li "number " x])]]]]
