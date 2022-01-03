@@ -23,8 +23,6 @@
 ;; I'm thinking that a clojure.walk/prewalk / postwalk with a multimethod
 ;; dispatching on :t might work.
 
-
-
 (defn org-> [source]
   (-parse {:source source
            :format "org"}))
@@ -35,14 +33,23 @@
 
 (org-> "some text")
 
+(defn header?
+  "Validates a pandoc 3-arity header - level, meta, content"
+  [el]
+  (and (= "Header" (:t el))
+       (<= 3 (count (:c el)))
+       (let [level (get (:c el) 0)]
+         (<= 1 level 6))))
+
+(comment
+  ;; a valid header:
+  (header? {:t "Header", :c [1 ["header" [] []] ["header"]]}))
+
 (do
   (defn ->hiccup [data]
     (into [:div]
           (postwalk (fn [el]
                       (cond
-                        (= "Header" (:t el))
-                        el
-
                         (= "Str" (:t el))
                         (:c el)
 
@@ -66,21 +73,39 @@
                               (for [li (:c el)]
                                  (into [:li] li)))
 
-                        ;; todo - return nil (aka ignore) when we go into production
+                        (header? el)
+                        (let [level (get-in el [:c 0])
+                              _attrs (get-in el [:c 1])
+                              content (get-in el [:c 2])]
+                          (into [(keyword (str "h" level))]
+                                content))
+
                         :else el
                         )
                       )
                     data)))
-  (-> "- item 1\n- item 2"
+  ;; cheats
+  {:t "Header", :c [1 ["header" [] []] ["header"]]}
+
+  (-> "* header\nBody goes here"
       org->
       ->hiccup)
 
+  )
 
-  #_
+(org-> "* head /more/")
+
+(comment
+  (-> "- item 1\n- item 2"
+      org->
+      ->hiccup)
   (-> "some text"
       org->
       ->hiccup)
   )
+
+(defn org->hiccup [data]
+  (-> data org-> ->hiccup))
 
 (comment
 
