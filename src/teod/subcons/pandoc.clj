@@ -45,54 +45,44 @@
   ;; a valid header:
   (header? {:t "Header", :c [1 ["header" [] []] ["header"]]}))
 
-(do
-  (defn ->hiccup [data]
-    (into [:div]
-          (postwalk (fn [el]
-                      (cond
-                        (= "Str" (:t el))
-                        (:c el)
+(defn ->hiccup [data]
+  (into [:div]
+        (postwalk (fn [el]
+                    (cond
+                      (= "Str" (:t el))
+                      (:c el)
 
-                        (= "Space" (:t el))
-                        " "
+                      (= "Space" (:t el))
+                      " "
 
-                        (= "Para" (:t el))
-                        (into [:p
-                               (if (every? str (:c el))
-                                 (str/join "" (:c el))
-                                 (:c el))])
+                      (= "Para" (:t el))
+                      (into [:p
+                             (if (every? str (:c el))
+                               (str/join "" (:c el))
+                               (:c el))])
 
-                        (= "Plain" (:t el))
-                        (into [:span
-                               (if (every? str (:c el))
-                                 (str/join "" (:c el))
-                                 (:c el))])
+                      (= "Plain" (:t el))
+                      (into [:span
+                             (if (every? str (:c el))
+                               (str/join "" (:c el))
+                               (:c el))])
 
-                        (= "BulletList" (:t el))
-                        (into [:ul]
-                              (for [li (:c el)]
-                                 (into [:li] li)))
+                      (= "BulletList" (:t el))
+                      (into [:ul]
+                            (for [li (:c el)]
+                              (into [:li] li)))
 
-                        (header? el)
-                        (let [[level _attrs content] (:c el)]
-                          (into [(keyword (str "h" level))]
-                                content))
+                      (header? el)
+                      (let [[level _attrs content] (:c el)]
+                        (into [(keyword (str "h" level))]
+                              content))
 
-                        :else el
-                        )
-                      )
-                    data)))
+                      :else el))
 
-
-
-
-  )
+                  data)))
 
 
 (comment
-  ;; A pandoc header looks like this:
-  {:t "Header", :c [1 ["header" [] []] ["header"]]}
-
   (-> "* header\nBody goes here"
       org->
       ->hiccup)
@@ -165,6 +155,11 @@ Hello!")))
 - are you okay?
 - anything else?"
          :format "org"})
+
+  (org->hiccup "* okay
+
+- are you okay?
+- anything else?")
 
   ;; into pandoc
   [{:t "Header", :c [1 ["okay" [] []] [{:t "Str", :c "okay"}]]}
