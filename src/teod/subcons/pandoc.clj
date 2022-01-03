@@ -17,40 +17,10 @@
 ;; Any advice on how to approach this? Just do it by hand with clojure.walk? Not
 ;; sure if it's a plain mapping (dispatch on :t) or if I'm going to have to
 ;; "join" elements. Like how pandoc splits on space.
+;;
+;; I'm thinking that a clojure.walk/prewalk / postwalk with a multimethod
+;; dispatching on :t might work.
 
-(-parse {:source "# okay
-
-- are you okay?
-- sure?"
-         :format "markdown"})
-;; => [{:t "Header", :c [1 ["okay" [] []] [{:t "Str", :c "okay"}]]}
-;;     {:t "BulletList",
-;;      :c
-;;      [[{:t "Plain",
-;;         :c
-;;         [{:t "Str", :c "are"}
-;;          {:t "Space"}
-;;          {:t "Str", :c "you"}
-;;          {:t "Space"}
-;;          {:t "Str", :c "okay?"}]}]
-;;       [{:t "Plain", :c [{:t "Str", :c "sure?"}]}]]}]
-
-(-parse {:source "* okay
-
-- are you okay?
-- sure?"
-         :format "org"})
-;; => [{:t "Header", :c [1 ["okay" [] []] [{:t "Str", :c "okay"}]]}
-;;     {:t "BulletList",
-;;      :c
-;;      [[{:t "Plain",
-;;         :c
-;;         [{:t "Str", :c "are"}
-;;          {:t "Space"}
-;;          {:t "Str", :c "you"}
-;;          {:t "Space"}
-;;          {:t "Str", :c "okay?"}]}]
-;;       [{:t "Plain", :c [{:t "Str", :c "sure?"}]}]]}]
 
 (defn org-> [source]
   (-parse {:source source
@@ -67,7 +37,52 @@ Hello!")
   (markdown-> "# head
 ## subhead
 Hello!")))
-
   )
 
-;; how do I want to fail? Could perhaps tap> to portal?
+
+(comment
+  ;; big example
+
+  ;; org
+  ;;
+  ;; * okay
+  ;;
+  ;; - are you okay?
+  ;; - anything else?
+
+  ;; from markdown
+  (-parse {:source "# okay
+
+- are you okay?
+- anything else?"
+           :format "markdown"})
+
+  ;; from org
+  (-parse {:source "* okay
+
+- are you okay?
+- anything else?"
+         :format "org"})
+
+  ;; into pandoc
+  [{:t "Header", :c [1 ["okay" [] []] [{:t "Str", :c "okay"}]]}
+   {:t "BulletList",
+    :c
+    [[{:t "Plain",
+       :c
+       [{:t "Str", :c "are"}
+        {:t "Space"}
+        {:t "Str", :c "you"}
+        {:t "Space"}
+        {:t "Str", :c "okay?"}]}]
+     [{:t "Plain",
+       :c [{:t "Str", :c "anything"} {:t "Space"} {:t "Str", :c "else?"}]}]]}]
+
+  ;; into hiccup
+  [:div
+   [:h1 "okay"]
+   [:ul
+    [:ol "are you okay?"]
+    [:ol "anything else?"]]]
+
+  )
