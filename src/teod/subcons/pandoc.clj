@@ -1,4 +1,5 @@
 (ns teod.subcons.pandoc
+  "Pandoc-powered parsing and Hiccup generation from plain text"
   (:require
    [clojure.data.json :as json]
    [clojure.java.shell :refer [sh]]
@@ -13,15 +14,6 @@
       :out
       (json/read-str :key-fn keyword)
       :blocks))
-
-;; At some point, the output of -parse needs to become hiccup.
-;;
-;; Any advice on how to approach this? Just do it by hand with clojure.walk? Not
-;; sure if it's a plain mapping (dispatch on :t) or if I'm going to have to
-;; "join" elements. Like how pandoc splits on space.
-;;
-;; I'm thinking that a clojure.walk/prewalk / postwalk with a multimethod
-;; dispatching on :t might work.
 
 (defn org-> [source]
   (-parse {:source source
