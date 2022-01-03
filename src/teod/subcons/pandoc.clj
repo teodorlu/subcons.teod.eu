@@ -92,6 +92,9 @@
 (defn org->hiccup [data]
   (-> data org-> ->hiccup))
 
+(defn markdown->hiccup [data]
+  (-> data markdown-> ->hiccup))
+
 (comment
 
   (org-> "* my header")
