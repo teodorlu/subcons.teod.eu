@@ -26,7 +26,13 @@
     [:li [:a {:href "porta1"} "porta1"]]
     [:li [:a {:href "porta2"} "porta2"]]
     [:li [:a {:href "bored/"} "bored"]]]
-   [:p "Sci is nice. Embedded calculations is kinda cool."]
-   [:pre [:code "1 + 2 is " (str (+ 1 2))]]
+   [:p "Sci is nice. Look, we can do embedded calculation:"]
+   (let [showoff (fn [form]
+                   [:pre [:code (str form)
+                          " is "
+                          (str (eval form))
+                          ]])]
+     (showoff (quote (* 9 9)))
+     (showoff (quote (range 12))))
    [:ul (for [x (range 3)]
           [:li "number " x])]]]]
