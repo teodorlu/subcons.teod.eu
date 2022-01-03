@@ -64,7 +64,7 @@
                         (= "BulletList" (:t el))
                         (into [:ul]
                               (for [li (:c el)]
-                                 (into [:li li])))
+                                 (into [:li] li)))
 
                         ;; todo - return nil (aka ignore) when we go into production
                         :else el
