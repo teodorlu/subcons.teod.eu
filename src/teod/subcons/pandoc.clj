@@ -23,7 +23,8 @@
   (-parse {:source source
            :format "markdown"}))
 
-(org-> "some text")
+(comment
+  (org-> "some text"))
 
 (defn header?
   "Validates a pandoc 3-arity header - level, meta, content"
