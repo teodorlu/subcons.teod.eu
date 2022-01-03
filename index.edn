@@ -11,7 +11,7 @@
  [:body
   [:section
    [:p [:em "Internet. The place of advice without context."]]
-   [:p "AKA hyper-incremental idea factory — expreiment with message, medium and tools."]
+   [:p "AKA aspirational hyper-incremental idea factory — expreiment with message, medium and tools."]
    [:p "Zero treshold for posting - don't expect curation."
     " Rather, expect noise and play!"]
    [:p ""]
