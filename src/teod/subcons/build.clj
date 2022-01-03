@@ -27,7 +27,8 @@
         (println " done."))
       (catch Throwable t
         (println "Faied!")
-        (clojure.stacktrace/print-stack-trace t)))))
+        (clojure.stacktrace/print-stack-trace t)
+        (tap> t)))))
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn watch!
@@ -41,3 +42,6 @@
   (hawk/watch! [{:paths ["."]
                  :filter #'index-edn?
                  :handler #'watch-rebuild-edn-handler}]))
+
+(defn stop! [watcher]
+  (hawk/stop! watcher))
