@@ -8,6 +8,15 @@
         edn-nometa (with-meta edn {})
         transformed (reduce (fn [val trans]
                               (if-let [f (requiring-resolve trans)]
+                                ;; should I provide more info here?
+                                ;;
+                                ;; hmm, not sure ... the whole thing goes into a
+                                ;; SCI env
+                                ;;
+                                ;; We need something on the outside, I think
+                                ;;
+                                ;; Something passed to the transformers, then
+                                ;; passed further to SCI powered functions.
                                 (f val)
                                 (do
                                   (println "Error transforming EDN: " (info/source-path edn))
