@@ -52,6 +52,7 @@
        "babashka/examples/http-server"]
       "."]
      ]
+    [:details [:summary "Balancing outcome orientation and bottom-up play"]]
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
                                        :target "_blank"}
