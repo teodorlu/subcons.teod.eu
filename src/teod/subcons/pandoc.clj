@@ -152,11 +152,6 @@ Hello!")))
 - anything else?"
          :format "org"})
 
-  (org->hiccup "* okay
-
-- are you okay?
-- anything else?")
-
   ;; into pandoc
   [{:t "Header", :c [1 ["okay" [] []] [{:t "Str", :c "okay"}]]}
    {:t "BulletList",
@@ -171,11 +166,41 @@ Hello!")))
      [{:t "Plain",
        :c [{:t "Str", :c "anything"} {:t "Space"} {:t "Str", :c "else?"}]}]]}]
 
+  (org->hiccup "* okay
+
+- are you okay?
+- anything else?")
+
   ;; into hiccup
   [:div
    [:h1 "okay"]
    [:ul
     [:ol "are you okay?"]
     [:ol "anything else?"]]]
+
+  (org->hiccup "
+#+TITLE: Balancing outcome orientation and bottom-up play
+
+* Outcome orientation distributes intent to teams
+")
+
+  (org-> "#+TITLE: Balancing\n\n* Outcome orientation")
+
+  (let [source "#+TITLE: Balancing outcome and process\n\n* Outcome orientation"
+        format "org"]
+    (-> (sh "pandoc" "-f" format "-t" "json" :in source)
+        :out
+        (json/read-str :key-fn keyword)
+        :meta))
+  ;; => {:title
+  ;;     {:t "MetaInlines",
+  ;;      :c
+  ;;      [{:t "Str", :c "Balancing"}
+  ;;       {:t "Space"}
+  ;;       {:t "Str", :c "outcome"}
+  ;;       {:t "Space"}
+  ;;       {:t "Str", :c "and"}
+  ;;       {:t "Space"}
+  ;;       {:t "Str", :c "process"}]}}
 
   )
