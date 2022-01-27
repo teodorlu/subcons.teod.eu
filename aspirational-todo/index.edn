@@ -67,7 +67,10 @@
       [:details [:summary "Annotated Youtube video - enriched with annotations and content"]
        [:p "Tailored to the consumption of the video."
         " I was thinking about this when I was watching Joe Armstrong."]
-       [:p (youtube-embed "rmueBVrLKcY")]]
+       [:p (youtube-embed "rmueBVrLKcY")]
+       [:p "I'm thinking that scittle could be a great tool to achieve something like that."
+        " EDN preprocessing, then delegate out to a CLJS file."]
+       [:p "🤔"]]
       [:details [:summary "Something datasets Clojure"]
        [:p
         (youtube-embed "VD17eB6vVto")]]
