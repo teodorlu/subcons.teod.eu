@@ -54,6 +54,8 @@
      ]
     [:details [:summary "Balancing outcome orientation and bottom-up play"]]
     [:details [:summary "GUI for collecting aspirational todos"]]
+    [:details [:summary "Annotated Youtube video - enriched with annotations and content"]
+     [:p "Tailored to the consumption of the video"]]
     
     ;; View on web - Can this be a function / reusable component?
     [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/aspirational-todo/"
