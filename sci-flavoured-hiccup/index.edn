@@ -1,0 +1,6 @@
+^{:teod.subcons/filewriter :teod.subcons.filewriter/hiccup-html
+  :teod.subcons/transformers [teod.subcons.sci/eval]}
+[:html
+ [:body
+  [:p "hello, there!"]
+  ]]
