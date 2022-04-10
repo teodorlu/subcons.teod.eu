@@ -4,6 +4,7 @@
 ** Why learn
 *** Fun
 *** Effective
+Exponential growth beats linear growth (given time).
 ** What to learn
 *** Search for orthogonal skills that span a space where you want to have impact
 ** How to learn
