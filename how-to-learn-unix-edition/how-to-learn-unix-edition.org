@@ -39,7 +39,6 @@ Proposed structure:
 Hmm, this could work. And could also be a reasonable way to get feedback. And I
 could start from my org-mode pandoc stuff.
 * 2022-04-10
-
 ** Copied notes from reflect.ted.eu README
 
 [[https://github.com/teodorlu/reflect.teod.eu/blob/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/README.org#L3-L46][Source on github]].
@@ -87,3 +86,8 @@ Design ⟂ implementation enables discussing the /what/ in a resonable way
 BUT design isn't 100 % decoupled from implementation. What can be implemented
 directs the solution space. We want to /navigate the solution space
 effectively/. Not ignore it
+** Process goals
+1. I want to play with tools, process and flow at the same time as I am creating
+   content.
+2. Process enables content.
+3. Content informs process.
