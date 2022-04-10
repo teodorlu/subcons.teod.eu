@@ -32,8 +32,5 @@
      " 54 lines of compact Emacs Lisp! It hurts!"]
     [:p "but .. really ... should this not be .. easy? or ...?"
      " Well, perhaps not. Not if I want to have a nice Emacs interface. It's not only about mapping commands around,"
-     " it's about selection, installation, etc."]
-
-    ]
-
+     " it's about selection, installation, etc."]]
    ]]]
