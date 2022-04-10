@@ -1,5 +1,18 @@
 #+title: How To Learn — Unix Edition
 
+* How to Learn — Unix Edition (Draft)
+** Why learn
+*** Fun
+*** Effective
+** What to learn
+*** Search for orthogonal skills that span a space where you want to have impact
+** How to learn
+1. Define what you want to achieve
+2. Learn fast by designing and implementing an interactive feedback loop
+3. Reflect on process, outcome and goals - by yourself (journaling,
+   introspection) and with others (retrospectives, feedback)
+
+Repeat.
 * 2022-04-10
 
 ** Copied notes from reflect.ted.eu README
