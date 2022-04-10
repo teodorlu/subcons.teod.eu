@@ -91,3 +91,13 @@ effectively/. Not ignore it
    content.
 2. Process enables content.
 3. Content informs process.
+** Babashka or Clojure?
+Using babashka all the way would be /really/ neat. Simple to work with. Not so
+abstract.
+
+But I'm afraid I'm not ready for that. Yet. I think a tight piece of Clojure
+code would be better. At least, I'm not terribly sensitive to performance, as
+long as it's ok.
+
+I think a Babashka script would be a nice place to end up - but I'm not sure
+that's a reasonable next step. Plus - this already works quite well.
