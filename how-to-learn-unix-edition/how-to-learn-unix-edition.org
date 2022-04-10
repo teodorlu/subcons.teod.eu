@@ -28,6 +28,16 @@ How can I (quickly) turn this into something I can publish on the web?
 Can I make due with some plain HTML?
 
 And later enrich that HTML into something more?
+
+I basically only ... need to create an index.html ... and make that make sense.
+Proposed structure:
+
+1. Load straight into a web page where the outline shows - as HTML
+2. Load some javascript on top of that so that additional functionality can be
+   provided.
+
+Hmm, this could work. And could also be a reasonable way to get feedback. And I
+could start from my org-mode pandoc stuff.
 * 2022-04-10
 
 ** Copied notes from reflect.ted.eu README
