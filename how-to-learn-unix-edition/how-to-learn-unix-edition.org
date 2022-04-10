@@ -101,3 +101,19 @@ long as it's ok.
 
 I think a Babashka script would be a nice place to end up - but I'm not sure
 that's a reasonable next step. Plus - this already works quite well.
+** Separate web apps, or centralized?
+Do I want to embed functions into EDN? Or work on some "parent library"?
+
+If I want to provide some ... stuff ... to come along with the other stuff ...
+
+List of stuff:
+
+1. =index.edn= - pulls everything together, produces actual HTML.
+2. =index.html= - resulting artefact
+3. =how-to-learn-unix-edition.org= - source file
+
+Where do I want to write code? Here in this subdirectory? Or some other place?
+
+Should I put the whole thing on the Clojure classpath? Or possibly configure
+="paths"= to include this place, so that I can put source code on it? If I did
+... I could fire up a REPL that knows about plain Clojure files here.
