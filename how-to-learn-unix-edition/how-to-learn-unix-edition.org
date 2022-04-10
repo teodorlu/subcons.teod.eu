@@ -117,3 +117,8 @@ Where do I want to write code? Here in this subdirectory? Or some other place?
 Should I put the whole thing on the Clojure classpath? Or possibly configure
 ="paths"= to include this place, so that I can put source code on it? If I did
 ... I could fire up a REPL that knows about plain Clojure files here.
+
+Then ... just implement some multimethod on some thing ...
+
+Why "connect" back to the root? Because I want to play nicely with other Clojure
+stuff. I don't want to break out a beast that nobody knows how to handle.
