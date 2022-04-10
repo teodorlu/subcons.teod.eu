@@ -1,0 +1,52 @@
+#+title: How To Learn — Unix Edition
+
+* 2022-04-10
+
+** Copied notes from reflect.ted.eu README
+
+Source:
+https://github.com/teodorlu/reflect.teod.eu/blob/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/README.org#L3-L46
+
+*** How to learn
+
+1. Learn the right things (search for orthogonal skills that spans a space where
+   you want to have impact)
+2. Learn fast with a rapid feedback loop
+3. Reflect & introspect on process and intent
+
+...
+
+I want to be able to explain this to people. And I want to iterate on it myself.
+I'll need some slides. And I'll want to edit those slides structurally, probably
+with Org-mode. And I'll want to /run/ the resulting slides. Probably in a sci
+context like scittle.
+
+(That's actually a case for where sci-in-sci makes sense)
+
+But ... how do I want to handle it? Produce static HTML, then enrich it? With
+hooks, perhaps? Do I want to produce multiple files? I think I want to control
+that with EDN data.
+
+*** How to work with the outline/structure
+
+No, that's not the right question.
+
+There's a reason I'm not using React for this. Or just powerpoint.
+
+The common "broad strokes" solution is often course, and hard to use. Not
+flexible. I'd rather have sharp, precise tools that feel right in the hand.
+
+I like outlines. And I like tools like Miro or Figma for visual presentation. So
+... perhaps control the overall structure as an outline?
+
+I want to ask Jack Rusher about how he's taking notes.
+
+**** Digression - what ⟂ how
+
+Tension:
+
+Design ⟂ implementation enables discussing the /what/ in a resonable way
+
+BUT design isn't 100 % decoupled from implementation. What can be implemented
+directs the solution space. We want to /navigate the solution space
+effectively/. Not ignore it
