@@ -33,4 +33,17 @@
     [:p "but .. really ... should this not be .. easy? or ...?"
      " Well, perhaps not. Not if I want to have a nice Emacs interface. It's not only about mapping commands around,"
      " it's about selection, installation, etc."]]
+
+   [:section [:h3 "Approach: Find some meaningful problem, play with it."]
+    [:p "Here's a possible process:"]
+    ;; Source:
+    ;;
+    ;; 1. Define what you want to achieve
+    ;; 2. Learn fast by designing and implementing an interactive feedback loop
+    ;; 3. Reflect on process, outcome and goals - by yourself
+    [:ol
+     [:li "Define what you want to achieve"]
+     [:li "Learn fast by designing and implementing an interaction feedback loop"]
+     [:li "Reflect on process, outcome and goals - by yourself (introspection), or in a setting with others (a retrospective)"]]
+    ]
    ]]]
