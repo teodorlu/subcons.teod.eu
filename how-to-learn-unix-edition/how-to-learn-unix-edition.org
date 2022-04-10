@@ -8,12 +8,20 @@ Exponential growth beats linear growth (given time).
 ** What to learn
 *** Search for orthogonal skills that span a space where you want to have impact
 ** How to learn
+*** Process
 1. Define what you want to achieve
 2. Learn fast by designing and implementing an interactive feedback loop
 3. Reflect on process, outcome and goals - by yourself (journaling,
    introspection) and with others (retrospectives, feedback)
 
 Repeat.
+*** Example: Exercise from "TDT4120 - Algoritmer og datastrukturer"
+Good?
+*** Example: Exercise from "TKT4140 - Numeriske beregninger"
+Good?
+* Gap analysis
+** Missing the real content - what do we want to show?
+** Missing specificity in slides. What should the slides contain?
 * 2022-04-10
 
 ** Copied notes from reflect.ted.eu README
