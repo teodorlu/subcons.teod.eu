@@ -22,6 +22,12 @@ Good?
 * Gap analysis
 ** Missing the real content - what do we want to show?
 ** Missing specificity in slides. What should the slides contain?
+** Missing: a way to evaluate the outline and get feedback on it
+How can I (quickly) turn this into something I can publish on the web?
+
+Can I make due with some plain HTML?
+
+And later enrich that HTML into something more?
 * 2022-04-10
 
 ** Copied notes from reflect.ted.eu README
