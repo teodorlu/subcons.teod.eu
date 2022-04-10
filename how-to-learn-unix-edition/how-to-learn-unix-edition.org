@@ -17,8 +17,7 @@ Repeat.
 
 ** Copied notes from reflect.ted.eu README
 
-Source:
-https://github.com/teodorlu/reflect.teod.eu/blob/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/README.org#L3-L46
+[[https://github.com/teodorlu/reflect.teod.eu/blob/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/README.org#L3-L46][Source on github]].
 
 *** How to learn
 
