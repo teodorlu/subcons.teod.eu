@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+body code {
+font-size: 0.9rem;
+border: 1px solid pink;
+}
+
 body h1 {
   font-size: 1.6rem;
 }
