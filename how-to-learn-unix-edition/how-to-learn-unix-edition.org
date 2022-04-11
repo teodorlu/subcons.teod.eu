@@ -122,3 +122,17 @@ Then ... just implement some multimethod on some thing ...
 
 Why "connect" back to the root? Because I want to play nicely with other Clojure
 stuff. I don't want to break out a beast that nobody knows how to handle.
+
+* 2022-04-11
+** Incremental after all
+Here's what I can do:
+
+Add in another argument to the hiccup generation.
+
+1. =:on-unknown-element :omit=: Just leave nils when there's a subtree we can't
+   handle
+2. =:on-unknown-element {:replace nil}= ...
+3. =:on-unknown-element :error=: Leave an assert.
+
+Not sure what the right names for this is (yet). Inspired by Clojure's =(get map
+key not-found)=.
