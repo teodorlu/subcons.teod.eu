@@ -136,3 +136,10 @@ Add in another argument to the hiccup generation.
 
 Not sure what the right names for this is (yet). Inspired by Clojure's =(get map
 key not-found)=.
+** Terminal skills is effective, fast scaffolding
+You already know how to work with a type of problem. No need to reinvent a
+workflow. Scaffolding enables you to just "do the work" faster.
+
+My scaffolding: I know how how to use a terminal / shell. I know how to create a
+command that does about what I want to do. I know how to bind an editor keypress
+to cause some effect.
