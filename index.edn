@@ -12,9 +12,8 @@
   [:section
    [:p [:em "Internet. The place of advice without context."]]
    [:p "AKA aspirational hyper-incremental idea factory — experiment with message, medium and tools."]
-   [:p "Zero treshold for posting. Don't expect curation."
-    " Rather, look around, examine, explore."
-    " Even play!"]
+   [:p "Low treshold for posting. Don't expect curation."
+    " Rather, look around, examine, explore." " Perhaps even play!"]
    [:p ""]
    [:p "A few pages:"]
    [:ul
