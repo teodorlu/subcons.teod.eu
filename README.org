@@ -10,7 +10,7 @@ Requirements:
 To work on pages, run:
 
 #+begin_src
-bb build+watch
+bb watch+serve
 #+end_src
 
 Generated HTML is /checked into git/. This way, it's easy to see where changes
