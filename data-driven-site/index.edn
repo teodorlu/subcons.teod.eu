@@ -55,7 +55,7 @@
        " Also, I'd like to experiment with \"embedding\" other kinds of content. Markdown, Org-mode, Vega JSON, etc."]
 
       [:p "Nods thanks go to " [:a {:href twitter-magnars} "Magnar Sveen"] ", " [:a {:href twitter-jackrusher} "Jack Rusher"] " for simple approaches to HTML with Clojure"
-       ", and to " [:a {:href twitter-oddmunds} "Oddmund Strømme"] " for discissions related to TCR and other things."]
+       ", and to " [:a {:href twitter-oddmunds} "Oddmund Strømme"] " for discussions related to TCR and other things."]
 
       ;; Link to view on web. Can I provide this as something reusable? Perhaps just the URLs?
       [:p "View this page on web: " [:a {:href "https://subcons.teod.eu/data-driven-site/"
